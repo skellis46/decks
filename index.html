@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI &amp; LLM Use in PGR Research · C-DaRE</title>
+
+  <!--
+    All slide content lives in slides.md — edit that file and refresh.
+
+    TO RUN LOCALLY (offline):
+      1. Run: npm install reveal.js   (one-time, creates node_modules/)
+      2. Change the 3 CSS links and 4 JS links below:
+            CDN:   https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/...
+            Local: node_modules/reveal.js/dist/...
+         (and for plugins: node_modules/reveal.js/dist/plugin/markdown.js etc.)
+      3. Serve with: python3 -m http.server
+
+    TO RUN FROM GITHUB PAGES:
+      Keep CDN links as-is. Just open the GitHub Pages URL in a browser.
+
+    THEMES: dropdown bottom-right. 
+  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/black.css" id="theme">
+
+  <style>
+    #theme-switcher {
+      position: fixed;
+      bottom: 12px;
+      right: 12px;
+      z-index: 1000;
+      font-family: sans-serif;
+      font-size: 12px;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+    #theme-switcher:hover { opacity: 1; }
+    #theme-switcher select {
+      padding: 3px 6px;
+      border-radius: 4px;
+      border: 1px solid #888;
+      background: #222;
+      color: #eee;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="slides.md"
+               data-separator="\r?\n---\r?\n"
+               data-separator-vertical="\r?\n----\r?\n"
+               data-separator-notes="^Note:">
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+    });
+  </script>
+
+  <div id="theme-switcher">
+    <select onchange="switchTheme(this.value)">
+      <option value="black" selected>black</option>
+      <option value="white">white</option>
+      <option value="league">league</option>
+      <option value="beige">beige</option>
+      <option value="sky">sky</option>
+      <option value="night">night</option>
+      <option value="serif">serif</option>
+      <option value="simple">simple</option>
+      <option value="solarized">solarized</option>
+      <option value="moon">moon</option>
+      <option value="dracula">dracula</option>
+      <option value="blood">blood</option>
+    </select>
+  </div>
+
+  <script>
+    function switchTheme(name) {
+      document.getElementById('theme').setAttribute(
+        'href', 'https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/' + name + '.css'
+      );
+    }
+  </script>
+</body>
+</html>
