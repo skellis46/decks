@@ -5,9 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI &amp; LLM Use in PGR Research · C-DaRE</title>
 
+  <!--
+    All slide content lives in slides.md — edit that file and refresh.
+    TO RUN: python3 -m http.server → http://localhost:8000
+  -->
+
   <link rel="stylesheet" href="reveal/dist/reset.css">
   <link rel="stylesheet" href="reveal/dist/reveal.css">
   <link rel="stylesheet" href="reveal/dist/theme/black.css" id="theme">
+  <script src="reveal/dist/chart.umd.min.js"></script>
+
+  <style>
+    .engagement-chart-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      margin-top: 40px;
+    }
+    .chart-note {
+      font-size: 0.45em;
+      opacity: 0.6;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,10 +45,105 @@
   <script src="reveal/plugin/markdown/markdown.js"></script>
   <script src="reveal/plugin/notes/notes.js"></script>
   <script src="reveal/plugin/highlight/highlight.js"></script>
+
   <script>
     Reveal.initialize({
       hash: true,
       plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+    }).then(function() {
+
+      function isEngagementSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Reluctant, not enthusiastic');
+      }
+
+      function injectChart(slide) {
+        // Only inject once
+        if (slide.querySelector('.engagement-chart-wrap')) return;
+
+        // Hide the bullet list and small caption
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        // Build and inject chart container
+        var wrap = document.createElement('div');
+        wrap.className = 'engagement-chart-wrap';
+        var canvas = document.createElement('canvas');
+        canvas.id = 'engagementChart';
+        wrap.appendChild(canvas);
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Half the cohort has either withdrawn or never engaged. This is not a story of rapid adoption.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+
+        new Chart(canvas.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: ['Yes, occasionally', 'Tried — don\'t use now', 'No, never', 'Yes, regularly'],
+            datasets: [{
+              data: [13, 9, 3, 1],
+              backgroundColor: [
+                'rgba(52, 211, 153, 0.85)',
+                'rgba(251, 146, 60, 0.85)',
+                'rgba(248, 113, 113, 0.85)',
+                'rgba(96, 165, 250, 0.85)'
+              ],
+              borderColor: [
+                'rgba(52, 211, 153, 1)',
+                'rgba(251, 146, 60, 1)',
+                'rgba(248, 113, 113, 1)',
+                'rgba(96, 165, 250, 1)'
+              ],
+              borderWidth: 1,
+              borderRadius: 3
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    var pct = Math.round(ctx.parsed.x / 26 * 100);
+                    return ' ' + ctx.parsed.x + ' respondents (' + pct + '%)';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                max: 16,
+                grid: { color: 'rgba(255,255,255,0.08)' },
+                ticks: { color: 'rgba(255,255,255,0.5)', font: { size: 13 }, stepSize: 2 },
+                border: { color: 'rgba(255,255,255,0.15)' }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: 'rgba(255,255,255,0.85)', font: { size: 15 } },
+                border: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      // Inject into current slide if it's the engagement slide
+      var current = Reveal.getCurrentSlide();
+      if (isEngagementSlide(current)) injectChart(current);
+
+      // Inject on slide change
+      Reveal.on('slidechanged', function(event) {
+        if (isEngagementSlide(event.currentSlide)) {
+          injectChart(event.currentSlide);
+        }
+      });
     });
   </script>
 </body>
