@@ -16,6 +16,100 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 
   <style>
+    /* ── Coventry University brand colours ──────────────────────────────── */
+    :root {
+      --cov-blue:   #0074E7;
+      --cov-purple: #2B1C43;
+      --cov-mid:    #5B289F;
+      --cov-white:  #FFFFFF;
+    }
+
+    /* ── Wordmark: top-right on every slide ─────────────────────────────── */
+    #cov-wordmark {
+      position: fixed;
+      top: 18px;
+      right: 24px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      pointer-events: none;
+      opacity: 0.92;
+    }
+
+    #cov-wordmark .wm-research {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      color: var(--cov-white);
+    }
+
+    #cov-wordmark .wm-divider {
+      width: 1px;
+      height: 22px;
+      background: rgba(255,255,255,0.45);
+      flex-shrink: 0;
+    }
+
+    #cov-wordmark .wm-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    #cov-wordmark .wm-logo .wm-cov {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--cov-blue);
+      letter-spacing: 0.01em;
+    }
+
+    #cov-wordmark .wm-logo .wm-uni {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      color: var(--cov-blue);
+      letter-spacing: 0.01em;
+    }
+
+    /* Phoenix SVG mark */
+    #cov-wordmark .wm-phoenix {
+      width: 22px;
+      height: 22px;
+      opacity: 0.85;
+    }
+
+    /* ── Thin blue accent on slide headings ─────────────────────────────── */
+    .reveal h1,
+    .reveal h2 {
+      color: var(--cov-white);
+    }
+
+    /* h3 used as section label — render in Coventry blue */
+    .reveal h3 {
+      color: var(--cov-blue);
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.15em;
+    }
+
+    /* Left-rule accent on section labels */
+    .reveal h3::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      background: var(--cov-blue);
+      margin-right: 0.5em;
+      vertical-align: middle;
+      border-radius: 1px;
+    }
+
+    /* ── Chart helpers (carried over) ───────────────────────────────────── */
     .engagement-chart-wrap {
       position: relative;
       width: 100%;
@@ -31,6 +125,26 @@
 </head>
 
 <body>
+
+  <!-- Coventry Research wordmark, always visible -->
+  <div id="cov-wordmark">
+    <span class="wm-research">Research</span>
+    <span class="wm-divider"></span>
+    <div class="wm-logo">
+      <span class="wm-cov">Coventry</span>
+      <span class="wm-uni">University</span>
+    </div>
+    <!-- Simplified phoenix outline as inline SVG -->
+    <svg class="wm-phoenix" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 4C24 4 14 10 12 20C10 30 18 34 18 34C18 34 14 38 16 44C16 44 20 40 24 40C28 40 32 44 32 44C34 38 30 34 30 34C30 34 38 30 36 20C34 10 24 4 24 4Z" stroke="#0074E7" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M24 14C24 14 20 18 20 24C20 28 24 30 24 30C24 30 28 28 28 24C28 18 24 14 24 14Z" fill="#0074E7" opacity="0.6"/>
+      <path d="M16 20C16 20 10 18 8 12" stroke="#0074E7" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M32 20C32 20 38 18 40 12" stroke="#0074E7" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M18 10C18 10 14 6 8 8" stroke="#0074E7" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M30 10C30 10 34 6 40 8" stroke="#0074E7" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
   <div class="reveal">
     <div class="slides">
       <section data-markdown="slides.md"
@@ -57,16 +171,13 @@
       }
 
       function injectChart(slide) {
-        // Only inject once
         if (slide.querySelector('.engagement-chart-wrap')) return;
 
-        // Hide the bullet list and small caption
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
         var small = slide.querySelector('small');
         if (small) small.style.display = 'none';
 
-        // Build and inject chart container
         var wrap = document.createElement('div');
         wrap.className = 'engagement-chart-wrap';
         var canvas = document.createElement('canvas');
@@ -134,11 +245,9 @@
         });
       }
 
-      // Inject into current slide if it's the engagement slide
       var current = Reveal.getCurrentSlide();
       if (isEngagementSlide(current)) injectChart(current);
 
-      // Inject on slide change
       Reveal.on('slidechanged', function(event) {
         if (isEngagementSlide(event.currentSlide)) {
           injectChart(event.currentSlide);
