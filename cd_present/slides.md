@@ -1,18 +1,13 @@
 # Centre Director
-### C-DaRE · [Your Name] · [Date]
+### C-DaRE · Simon Ellis · 26 June 2026
 
 ---
 
-### Vision
+## dancing
 
-## Placeholder
-
-Notes and content to follow.
 
 ---
 
-### Experience
-
-## Placeholder
-
-Notes and content to follow.
+### social dance
+### artistic dance
+### body-based understandings
