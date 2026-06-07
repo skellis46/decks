@@ -16,6 +16,33 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 
   <style>
+    /* Subheading label — visually subordinate to the h2 */
+    .reveal section h3 {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.55em;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0.2em;
+    }
+
+    /* Slides with injected content: top-align so heading stays
+       fixed and injected elements grow downward, not shifting on refresh */
+    .reveal section.top-align {
+      top: 0 !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+      padding-top: 48px !important;
+    }
+
+    /* Pin the ### label to a consistent vertical position across all
+       injected slides. Exception: the title slide is excluded by not
+       receiving the top-align class. */
+    .reveal section.top-align h3 {
+      margin-top: 0;
+    }
+
     .engagement-chart-wrap {
       position: relative;
       width: 100%;
@@ -51,6 +78,17 @@
       height: 260px;
       margin-top: 40px;
     }
+    .cohort-stat-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 32px;
+      margin-top: 48px;
+      width: 100%;
+    }
+    .cohort-stat-wrap .gap-stat {
+      flex: 1;
+    }
     .gap-stat-wrap {
       display: flex;
       justify-content: center;
@@ -64,13 +102,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 28px 24px;
+      padding: 20px 24px;
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 6px;
       background: rgba(255,255,255,0.04);
     }
     .gap-stat .stat-number {
-      font-size: 3.6em;
+      font-size: 3.2em;
       font-weight: 700;
       line-height: 1;
       letter-spacing: -0.02em;
@@ -82,12 +120,72 @@
       color: rgba(251, 191, 36, 0.9);
     }
     .gap-stat .stat-label {
-      font-size: 0.52em;
+      font-size: 16px;
       color: rgba(255,255,255,0.65);
       margin-top: 14px;
       text-align: center;
       line-height: 1.4;
     }
+    /* Why it matters — sequential statement cards */
+    .sequential-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 36px;
+      width: 100%;
+    }
+    .sequential-item {
+      padding: 14px 20px;
+      border-left: 3px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.04);
+      border-radius: 0 4px 4px 0;
+      text-align: left;
+      font-size: 0.52em;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.85);
+    }
+    .sequential-item strong {
+      color: #fff;
+      display: block;
+      margin-bottom: 2px;
+      font-size: 1.05em;
+    }
+
+    /* Recommendations — stepped layout */
+    .stepped-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 32px;
+      width: 100%;
+    }
+    .stepped-item {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      padding: 11px 18px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 4px;
+      font-size: 0.48em;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.8);
+    }
+    .stepped-item .step-num {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: rgba(255,255,255,0.25);
+      min-width: 1.2em;
+      flex-shrink: 0;
+    }
+    .stepped-item strong {
+      color: #fff;
+    }
+    .stepped-item:nth-child(1) { margin-left: 0; }
+    .stepped-item:nth-child(2) { margin-left: 2%; }
+    .stepped-item:nth-child(3) { margin-left: 4%; }
+    .stepped-item:nth-child(4) { margin-left: 6%; }
+    .stepped-item:nth-child(5) { margin-left: 8%; }
+
   </style>
 </head>
 
@@ -120,6 +218,7 @@
       function injectChart(slide) {
         // Only inject once
         if (slide.querySelector('.engagement-chart-wrap')) return;
+        slide.classList.add('top-align');
 
         // Hide the bullet list and small caption
         var ul = slide.querySelector('ul');
@@ -201,6 +300,7 @@
 
       function injectToolsChart(slide) {
         if (slide.querySelector('.tools-chart-wrap')) return;
+        slide.classList.add('top-align');
 
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
@@ -278,6 +378,7 @@
 
       function injectUsesChart(slide) {
         if (slide.querySelector('.uses-chart-wrap')) return;
+        slide.classList.add('top-align');
 
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
@@ -355,6 +456,7 @@
 
       function injectEthicalLineChart(slide) {
         if (slide.querySelector('.ethical-chart-wrap')) return;
+        slide.classList.add('top-align');
 
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
@@ -436,6 +538,7 @@
 
       function injectSupportChart(slide) {
         if (slide.querySelector('.support-chart-wrap')) return;
+        slide.classList.add('top-align');
 
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
@@ -513,12 +616,184 @@
         });
       }
 
+      function isWhyMattersSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Competence training is not ethics training');
+      }
+
+      function injectWhyMatters(slide) {
+        if (slide.querySelector('.sequential-wrap')) return;
+        slide.classList.add('top-align');
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'sequential-wrap';
+
+        wrap.innerHTML =
+          '<div class="sequential-item fragment">' +
+            '<strong>Ethical worry drives avoidance</strong>' +
+            'It\u2019s a reason for non-use, not an abstract attitude held at arm\u2019s length.' +
+          '</div>' +
+          '<div class="sequential-item fragment">' +
+            '<strong>Building confidence may lower ethical vigilance</strong>' +
+            'The prescription \u201Cbuild skills\u201D can undermine caution if delivered without ethics framing.' +
+          '</div>' +
+          '<div class="sequential-item fragment">' +
+            '<strong>The two cannot be treated as separate tracks</strong>' +
+            'Competence training and ethics training are not sequential \u2014 they must run together.' +
+          '</div>';
+
+        slide.appendChild(wrap);
+        Reveal.sync();
+      }
+
+      function isRecommendationsSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Five priorities');
+      }
+
+      function injectRecommendations(slide) {
+        if (slide.querySelector('.stepped-wrap')) return;
+        slide.classList.add('top-align');
+
+        var ol = slide.querySelector('ol');
+        if (ol) ol.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'stepped-wrap';
+
+        var items = [
+          ['Develop discipline-specific guidance', 'Generic policy won\u2019t fit this work.'],
+          ['Define \u201CLLM use\u201D practically', 'A workable definition is a prerequisite for any disclosure framework.'],
+          ['Pair competence with ethics', 'Never train one without the other.'],
+          ['Create space for peer dialogue', 'Surface practice where stigma currently silences it.'],
+          ['Acknowledge the full range of stances', 'Refusers, adopters, and the ambivalent all need to be accounted for.']
+        ];
+
+        wrap.innerHTML = items.map(function(item, i) {
+          return '<div class="stepped-item fragment">' +
+            '<span class="step-num">' + (i + 1) + '</span>' +
+            '<span><strong>' + item[0] + '</strong> \u2014 ' + item[1] + '</span>' +
+          '</div>';
+        }).join('');
+
+        slide.appendChild(wrap);
+        Reveal.sync();
+      }
+
+      function isOwnershipSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Strongest convictions, least experience');
+      }
+
+      function injectOwnershipStats(slide) {
+        if (slide.querySelector('.ownership-stat-wrap')) return;
+        slide.classList.add('top-align');
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'gap-stat-wrap ownership-stat-wrap';
+
+        wrap.innerHTML =
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-red">4.67<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
+            '<span class="stat-label">anticipated loss of ownership<br>users who have never tried</span>' +
+          '</div>' +
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-amber">2.31<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
+            '<span class="stat-label">felt loss of ownership<br>occasional users</span>' +
+          '</div>';
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Intuition runs ahead of experience — a principled, pre-reflective stance on authorship, not a verdict learned from use.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+      }
+
+      function isParadoxSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Concern is highest among non-users');
+      }
+
+      function injectParadoxChart(slide) {
+        if (slide.querySelector('.paradox-stat-wrap')) return;
+        slide.classList.add('top-align');
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var blockquote = slide.querySelector('blockquote');
+        if (blockquote) blockquote.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'gap-stat-wrap';
+        wrap.style.cssText = 'display:flex;justify-content:center;align-items:stretch;gap:48px;margin-top:48px;width:100%';
+        wrap.classList.add('paradox-stat-wrap');
+
+        wrap.innerHTML =
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-red">4.0<span style="font-size:0.45em;opacity:0.6">\u20134.3</span></span>' +
+            '<span class="stat-label">mean ethical concern<br>non-users &amp; those who stopped</span>' +
+          '</div>' +
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-amber">3.5</span>' +
+            '<span class="stat-label">mean ethical concern<br>occasional users</span>' +
+          '</div>';
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Confidence and ethical concern are inversely correlated (r = \u22120.49). The more capable students feel, the less they worry.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+      }
+
+      function isCohortSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Low-confidence, ethically anxious, largely unsupported');
+      }
+
+      function injectCohortStats(slide) {
+        if (slide.querySelector('.cohort-stat-wrap')) return;
+        slide.classList.add('top-align');
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'cohort-stat-wrap';
+
+        wrap.innerHTML =
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-amber">2.0<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
+            '<span class="stat-label">mean confidence<br>in using LLMs</span>' +
+          '</div>' +
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-red">3.9<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
+            '<span class="stat-label">mean ethical concern</span>' +
+          '</div>' +
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-red">12%</span>' +
+            '<span class="stat-label">report clear<br>institutional guidance</span>' +
+          '</div>';
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Everything that follows unpacks these three numbers.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+      }
+
       function isGapSlide(slide) {
         return slide && slide.textContent && slide.textContent.includes('Navigating high stakes without support');
       }
 
       function injectGapStats(slide) {
         if (slide.querySelector('.gap-stat-wrap')) return;
+        slide.classList.add('top-align');
 
         var ul = slide.querySelector('ul');
         if (ul) ul.style.display = 'none';
@@ -549,6 +824,11 @@
       // Inject into current slide if it's the engagement slide
       var current = Reveal.getCurrentSlide();
       if (isEngagementSlide(current)) injectChart(current);
+      if (isWhyMattersSlide(current)) injectWhyMatters(current);
+      if (isRecommendationsSlide(current)) injectRecommendations(current);
+      if (isOwnershipSlide(current)) injectOwnershipStats(current);
+      if (isParadoxSlide(current)) injectParadoxChart(current);
+      if (isCohortSlide(current)) injectCohortStats(current);
       if (isToolsSlide(current)) injectToolsChart(current);
       if (isUsesSlide(current)) injectUsesChart(current);
       if (isEthicalLineSlide(current)) injectEthicalLineChart(current);
@@ -559,6 +839,21 @@
       Reveal.on('slidechanged', function(event) {
         if (isEngagementSlide(event.currentSlide)) {
           injectChart(event.currentSlide);
+        }
+        if (isWhyMattersSlide(event.currentSlide)) {
+          injectWhyMatters(event.currentSlide);
+        }
+        if (isRecommendationsSlide(event.currentSlide)) {
+          injectRecommendations(event.currentSlide);
+        }
+        if (isOwnershipSlide(event.currentSlide)) {
+          injectOwnershipStats(event.currentSlide);
+        }
+        if (isParadoxSlide(event.currentSlide)) {
+          injectParadoxChart(event.currentSlide);
+        }
+        if (isCohortSlide(event.currentSlide)) {
+          injectCohortStats(event.currentSlide);
         }
         if (isToolsSlide(event.currentSlide)) {
           injectToolsChart(event.currentSlide);
