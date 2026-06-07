@@ -52,7 +52,7 @@ The "tried and stopped" group is analytically important — withdrawal is an act
 
 ---
 
-### Tools & uses (Q2–Q3)
+### Tools (Q2)
 
 ## Concentrated, and ChatGPT-dominated
 
@@ -61,6 +61,21 @@ The "tried and stopped" group is analytically important — withdrawal is an act
 - Used early (scoping) and late (editing) — **rarely in the analytical middle**
 
 <small>Note the tool mismatch: the institutionally provisioned tool (Copilot) is not the one students reach for.</small>
+
+Note:
+The middle-stage avoidance matters: students keep AI away from the core intellectual work. Foreshadows "writing as thinking."
+
+---
+
+### Uses (Q3)
+
+## How they use them
+
+- **Literature search / summarising** — 10
+- **Writing / editing** — 8
+- **Explaining concepts** — 7
+
+<small>Used early (scoping) and late (editing) — rarely in the analytical middle.</small>
 
 Note:
 The middle-stage avoidance matters: students keep AI away from the core intellectual work. Foreshadows "writing as thinking."

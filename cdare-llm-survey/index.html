@@ -27,6 +27,67 @@
       opacity: 0.6;
       margin-top: 12px;
     }
+    .tools-chart-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      margin-top: 40px;
+    }
+    .uses-chart-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      margin-top: 40px;
+    }
+    .ethical-chart-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      margin-top: 40px;
+    }
+    .support-chart-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      margin-top: 40px;
+    }
+    .gap-stat-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 48px;
+      margin-top: 48px;
+      width: 100%;
+    }
+    .gap-stat {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 24px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.04);
+    }
+    .gap-stat .stat-number {
+      font-size: 3.6em;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .gap-stat .stat-number.stat-red {
+      color: rgba(248, 113, 113, 0.95);
+    }
+    .gap-stat .stat-number.stat-amber {
+      color: rgba(251, 191, 36, 0.9);
+    }
+    .gap-stat .stat-label {
+      font-size: 0.52em;
+      color: rgba(255,255,255,0.65);
+      margin-top: 14px;
+      text-align: center;
+      line-height: 1.4;
+    }
   </style>
 </head>
 
@@ -134,14 +195,385 @@
         });
       }
 
+      function isToolsSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Concentrated, and ChatGPT-dominated');
+      }
+
+      function injectToolsChart(slide) {
+        if (slide.querySelector('.tools-chart-wrap')) return;
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'tools-chart-wrap';
+        var canvas = document.createElement('canvas');
+        canvas.id = 'toolsChart';
+        wrap.appendChild(canvas);
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Note the mismatch: the institutionally provisioned tool (Copilot) is not the one students reach for.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+
+        new Chart(canvas.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: ['ChatGPT', 'Claude', 'Copilot'],
+            datasets: [{
+              data: [18, 6, 3],
+              backgroundColor: [
+                'rgba(96, 165, 250, 0.85)',
+                'rgba(96, 165, 250, 0.55)',
+                'rgba(96, 165, 250, 0.3)'
+              ],
+              borderColor: [
+                'rgba(96, 165, 250, 1)',
+                'rgba(96, 165, 250, 0.8)',
+                'rgba(96, 165, 250, 0.6)'
+              ],
+              borderWidth: 1,
+              borderRadius: 3
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    var pct = Math.round(ctx.parsed.x / 26 * 100);
+                    return ' ' + ctx.parsed.x + ' respondents (' + pct + '%)';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                max: 22,
+                grid: { color: 'rgba(255,255,255,0.08)' },
+                ticks: { color: 'rgba(255,255,255,0.5)', font: { size: 13 }, stepSize: 2 },
+                border: { color: 'rgba(255,255,255,0.15)' }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: 'rgba(255,255,255,0.85)', font: { size: 17 } },
+                border: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      function isUsesSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('How they use them');
+      }
+
+      function injectUsesChart(slide) {
+        if (slide.querySelector('.uses-chart-wrap')) return;
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'uses-chart-wrap';
+        var canvas = document.createElement('canvas');
+        canvas.id = 'usesChart';
+        wrap.appendChild(canvas);
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Used early (scoping) and late (editing) — rarely in the analytical middle.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+
+        new Chart(canvas.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: ['Literature search / summarising', 'Writing / editing', 'Explaining concepts'],
+            datasets: [{
+              data: [10, 8, 7],
+              backgroundColor: [
+                'rgba(96, 165, 250, 0.85)',
+                'rgba(96, 165, 250, 0.65)',
+                'rgba(96, 165, 250, 0.45)'
+              ],
+              borderColor: [
+                'rgba(96, 165, 250, 1)',
+                'rgba(96, 165, 250, 0.8)',
+                'rgba(96, 165, 250, 0.6)'
+              ],
+              borderWidth: 1,
+              borderRadius: 3
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    var pct = Math.round(ctx.parsed.x / 26 * 100);
+                    return ' ' + ctx.parsed.x + ' respondents (' + pct + '%)';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                max: 14,
+                grid: { color: 'rgba(255,255,255,0.08)' },
+                ticks: { color: 'rgba(255,255,255,0.5)', font: { size: 13 }, stepSize: 2 },
+                border: { color: 'rgba(255,255,255,0.15)' }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: 'rgba(255,255,255,0.85)', font: { size: 15 } },
+                border: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      function isEthicalLineSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Consensus on one thing, uncertainty beyond');
+      }
+
+      function injectEthicalLineChart(slide) {
+        if (slide.querySelector('.ethical-chart-wrap')) return;
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'ethical-chart-wrap';
+        var canvas = document.createElement('canvas');
+        canvas.id = 'ethicalLineChart';
+        wrap.appendChild(canvas);
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Genuine, unresolved disagreement about where the line falls — not ignorance of it.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+
+        new Chart(canvas.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: ['Submitting LLM text as own work', 'Brainstorming / structuring arguments', 'Grammar-checking'],
+            datasets: [{
+              data: [92, 42, 15],
+              backgroundColor: [
+                'rgba(248, 113, 113, 0.85)',
+                'rgba(251, 146, 60, 0.75)',
+                'rgba(52, 211, 153, 0.7)'
+              ],
+              borderColor: [
+                'rgba(248, 113, 113, 1)',
+                'rgba(251, 146, 60, 1)',
+                'rgba(52, 211, 153, 1)'
+              ],
+              borderWidth: 1,
+              borderRadius: 3
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    return ' ' + ctx.parsed.x + '% flagged this as problematic';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                max: 100,
+                grid: { color: 'rgba(255,255,255,0.08)' },
+                ticks: {
+                  color: 'rgba(255,255,255,0.5)',
+                  font: { size: 13 },
+                  stepSize: 20,
+                  callback: function(val) { return val + '%'; }
+                },
+                border: { color: 'rgba(255,255,255,0.15)' }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: 'rgba(255,255,255,0.85)', font: { size: 15 } },
+                border: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      function isSupportSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Examples, not edicts');
+      }
+
+      function injectSupportChart(slide) {
+        if (slide.querySelector('.support-chart-wrap')) return;
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'support-chart-wrap';
+        var canvas = document.createElement('canvas');
+        canvas.id = 'supportChart';
+        wrap.appendChild(canvas);
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'They want contextualised guidance for arts and performance research — not generic policy statements.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+
+        new Chart(canvas.getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: ['Discipline-specific examples', 'Workshops', 'Peer discussion / community of practice', 'Clearer policy'],
+            datasets: [{
+              data: [46, 27, 27, 15],
+              backgroundColor: [
+                'rgba(96, 165, 250, 0.85)',
+                'rgba(96, 165, 250, 0.65)',
+                'rgba(96, 165, 250, 0.65)',
+                'rgba(96, 165, 250, 0.4)'
+              ],
+              borderColor: [
+                'rgba(96, 165, 250, 1)',
+                'rgba(96, 165, 250, 0.8)',
+                'rgba(96, 165, 250, 0.8)',
+                'rgba(96, 165, 250, 0.6)'
+              ],
+              borderWidth: 1,
+              borderRadius: 3
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    return ' ' + ctx.parsed.x + '% selected this';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                max: 60,
+                grid: { color: 'rgba(255,255,255,0.08)' },
+                ticks: {
+                  color: 'rgba(255,255,255,0.5)',
+                  font: { size: 13 },
+                  stepSize: 10,
+                  callback: function(val) { return val + '%'; }
+                },
+                border: { color: 'rgba(255,255,255,0.15)' }
+              },
+              y: {
+                grid: { display: false },
+                ticks: { color: 'rgba(255,255,255,0.85)', font: { size: 15 } },
+                border: { display: false }
+              }
+            }
+          }
+        });
+      }
+
+      function isGapSlide(slide) {
+        return slide && slide.textContent && slide.textContent.includes('Navigating high stakes without support');
+      }
+
+      function injectGapStats(slide) {
+        if (slide.querySelector('.gap-stat-wrap')) return;
+
+        var ul = slide.querySelector('ul');
+        if (ul) ul.style.display = 'none';
+        var small = slide.querySelector('small');
+        if (small) small.style.display = 'none';
+
+        var wrap = document.createElement('div');
+        wrap.className = 'gap-stat-wrap';
+
+        wrap.innerHTML =
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-red">3 of 26</span>' +
+            '<span class="stat-label">report receiving<br>clear institutional guidance</span>' +
+          '</div>' +
+          '<div class="gap-stat">' +
+            '<span class="stat-number stat-amber">62%</span>' +
+            '<span class="stat-label">unaware of guidance<br>or find it vague</span>' +
+          '</div>';
+
+        var note = document.createElement('p');
+        note.className = 'chart-note';
+        note.textContent = 'Students are making consequential decisions on ethics, disclosure and integrity — with little to guide them.';
+
+        slide.appendChild(wrap);
+        slide.appendChild(note);
+      }
+
       // Inject into current slide if it's the engagement slide
       var current = Reveal.getCurrentSlide();
       if (isEngagementSlide(current)) injectChart(current);
+      if (isToolsSlide(current)) injectToolsChart(current);
+      if (isUsesSlide(current)) injectUsesChart(current);
+      if (isEthicalLineSlide(current)) injectEthicalLineChart(current);
+      if (isSupportSlide(current)) injectSupportChart(current);
+      if (isGapSlide(current)) injectGapStats(current);
 
       // Inject on slide change
       Reveal.on('slidechanged', function(event) {
         if (isEngagementSlide(event.currentSlide)) {
           injectChart(event.currentSlide);
+        }
+        if (isToolsSlide(event.currentSlide)) {
+          injectToolsChart(event.currentSlide);
+        }
+        if (isUsesSlide(event.currentSlide)) {
+          injectUsesChart(event.currentSlide);
+        }
+        if (isEthicalLineSlide(event.currentSlide)) {
+          injectEthicalLineChart(event.currentSlide);
+        }
+        if (isSupportSlide(event.currentSlide)) {
+          injectSupportChart(event.currentSlide);
+        }
+        if (isGapSlide(event.currentSlide)) {
+          injectGapStats(event.currentSlide);
         }
       });
     });
