@@ -1,4 +1,5 @@
 node_modules/
-index-offline.html.DS_Store
+index-offline.html
+.DS_Store
 reveal/
 **/index-offline.html
