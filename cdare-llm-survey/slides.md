@@ -1,22 +1,25 @@
-# AI & LLM Use in PGR Research
-### C-DaRE · Postgraduate Researcher Survey · Spring 2026
 
-Findings, tensions, and what they mean for institutional guidance
+
+---
+# AI & LLM Use by C‑DaRE PGRs
+### Centre for Dance Research PGR Survey · Spring 2026
+
+Findings, tensions and what they mean for institutional guidance
 
 Note:
 Frame: this is the first systematic look at how our doctoral researchers actually relate to these tools. ~1 min intro.
 
 ---
 
-### The study
+### C-DaRE PGR survey
 
-## What we asked, and who answered
+## Overview
 
-- Anonymous questionnaire to **all 45** C-DaRE postgraduate researchers
-- **26 responded** — a 58% response rate
+- Anonymous questionnaire to all 45 C-DaRE postgraduate researchers
+- **26 responded** = 58% response rate
 - 8 sections: usage, tools, attitudes, ethics, authorship, quality, support needs, open text
 
-<small>Small-n, so treat figures as indicative rather than definitive — but the patterns are consistent and strongly held.</small>
+<small>Small-n, so treat figures as indicative rather than definitive — but clear patterns are evident.</small>
 
 Note:
 Stress the qualitative weight: with this cohort the open responses carry as much signal as the numbers.
@@ -54,7 +57,7 @@ The "tried and stopped" group is analytically important — withdrawal is an act
 
 ### Tools (Q2)
 
-## Concentrated, and ChatGPT-dominated
+## ChatGPT-dominated
 
 - **ChatGPT** leads (18); Claude second (6); Copilot just 3
 - Main uses: **literature search/summarising** (10), **writing/editing** (8), **explaining concepts** (7)
@@ -86,11 +89,11 @@ The middle-stage avoidance matters: students keep AI away from the core intellec
 
 ## Low confidence sits beside high concern
 
-- **14 of 26** rated confidence at the floor (1/5); **no one** chose 5
+- **14 of 26** rated confidence at the floor (1/5); no one chose 5
 - **11 of 26** rated ethical concern at the ceiling (5/5)
 - Top worries: **academic integrity** (65% very concerned), **hallucinations** (62%)
 
-<small>Concern about *unclear guidelines* ranks lower — so ethical worry isn't merely a symptom of missing rules.</small>
+<small>Concern about *unclear guidelines* ranks lower – so ethical worry isn't merely a symptom of missing rules.</small>
 
 Note:
 Set up the key point: this anxiety is principled, not just procedural confusion.
@@ -115,8 +118,8 @@ This is the analytically sharpest finding. Pause here.
 
 ## Competence training is not ethics training
 
-- Ethical worry appears to **drive avoidance** — it's a reason for non-use, not abstract attitude
-- The prescription "build skills and confidence" may **lower ethical vigilance** if delivered without ethics framing
+- Ethical worry appears to **drive avoidance** — It is a practical stance, not a theoretical concern
+- Any push to "build skills and confidence" may **lower ethical vigilance** if delivered without ethics framing
 - The two cannot be treated as separate tracks
 
 Note:
@@ -135,7 +138,7 @@ Direct policy implication. The standard "just train them" response is actively u
 <small>Genuine, unresolved disagreement about *where* the line falls — not ignorance of it.</small>
 
 Note:
-The clean consensus masks deep divergence the moment you move past the obvious case.
+The clean consensus masks deep divergence the moment you move past the obvious case (brainstorming, structuring arguments, grammar checking, summarising papers)
 
 ---
 
@@ -146,7 +149,7 @@ The clean consensus masks deep divergence the moment you move past the obvious c
 - **"Never" users** anticipate the greatest loss of ownership: **4.67/5**
 - **Occasional users** feel least affected: **2.31/5**
 
-<small>Intuition runs *ahead* of experience — a principled, pre-reflective stance on authorship, not a verdict learned from use.</small>
+<small>Intuition runs *ahead* of experience – a principled, pre-reflective stance on authorship, not a verdict learned from use.</small>
 
 Note:
 Reinforces that refusal here is conviction-driven.
@@ -155,13 +158,13 @@ Reinforces that refusal here is conviction-driven.
 
 ### Voices (Q12 & Q15)
 
-## Writing *is* the thinking
+## Writing is the thinking
 
-<small>The most pervasive theme — ~10 responses, across all usage groups.</small>
+<small>The most pervasive theme – ~10 responses, across all usage groups.</small>
 
 > It simply badly replaces the thinking work that I need to do myself, which in fact constitutes the research work.
 
-<small>Outsourcing the writing isn't a shortcut — it bypasses the intellectual process that constitutes the research.</small>
+<small>Outsourcing the writing isn't a shortcut – it bypasses the intellectual process that constitutes the research.</small>
 
 Note:
 This directly contests any guidance that frames LLM rephrasing as harmless polishing.
@@ -174,10 +177,10 @@ This directly contests any guidance that frames LLM rephrasing as harmless polis
 
 > The line of when are we using AI is a bit blurred.
 
-- Grammarly, AI search, embedded features feel **categorically different** from ChatGPT — yet are all "AI"
-- Disclosure is meaningless without a **workable definition of "LLM use"**
+- Grammarly, AI search, embedded features feel categorically different from ChatGPT – yet all are "AI"
+- Disclosure is meaningless without a workable definition of "LLM use"
 
-<small>A practical definition is a *prerequisite* for any policy — not a footnote to it.</small>
+<small>A practical definition is a *prerequisite* for any policy – not a footnote to it.</small>
 
 Note:
 Without resolving this, no disclosure framework can be applied consistently or assessed fairly.
@@ -188,10 +191,10 @@ Without resolving this, no disclosure framework can be applied consistently or a
 
 ## Refusal has many roots
 
-- **Environmental & ethical burden** — principled withdrawal, not inconvenience
-- **Sensitive participant data** — a near-universal red line
-- **Voice & authenticity** — fear of homogenised, "edited-the-edit" output
-- **FOMO vs. stigma** — pressure to adopt *and* suspicion of anyone who does
+- **Environmental & ethical burden** – principled, values-driven withdrawal
+- **Sensitive participant data** – a near-universal red line
+- **Voice & authenticity** – fear of homogenised, "edited-the-edit" output
+- **FOMO vs stigma** — pressure to adopt *and* suspicion of anyone who does
 
 <small>Avoidance looks the same on the surface; the reasons require different institutional responses.</small>
 
@@ -248,7 +251,10 @@ These follow directly from the tensions, not from external opinion.
 
 ### There is no single "LLM user" here
 
-<small>Reluctant adopters, principled refusers, pragmatic users, and those who tried and stopped — for very different reasons. Guidance that assumes enthusiasm, or assumes resistance, will fail.</small>
+<small>Reluctant adopters, principled refusers, pragmatic users and those who tried and stopped – for very different reasons. Guidance that assumes enthusiasm, or assumes resistance, will fail.</small>
 
 Note:
 Close on the diversity of positions as the starting point for any policy. Leave time for questions.
+
+---
+

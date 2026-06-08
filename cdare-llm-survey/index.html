@@ -243,7 +243,7 @@
         new Chart(canvas.getContext('2d'), {
           type: 'bar',
           data: {
-            labels: ['Yes, occasionally', 'Tried — don\'t use now', 'No, never', 'Yes, regularly'],
+            labels: ['Yes, occasionally', 'Tried – don\'t use now', 'No, never', 'Yes, regularly'],
             datasets: [{
               data: [13, 9, 3, 1],
               backgroundColor: [
@@ -295,7 +295,7 @@
       }
 
       function isToolsSlide(slide) {
-        return slide && slide.textContent && slide.textContent.includes('Concentrated, and ChatGPT-dominated');
+        return slide && slide.textContent && slide.textContent.includes('ChatGPT-dominated');
       }
 
       function injectToolsChart(slide) {
@@ -471,7 +471,7 @@
 
         var note = document.createElement('p');
         note.className = 'chart-note';
-        note.textContent = 'Genuine, unresolved disagreement about where the line falls — not ignorance of it.';
+        note.textContent = 'Genuine, unresolved disagreement about where the line falls – not ignorance of it.';
 
         slide.appendChild(wrap);
         slide.appendChild(note);
@@ -553,7 +553,7 @@
 
         var note = document.createElement('p');
         note.className = 'chart-note';
-        note.textContent = 'They want contextualised guidance for arts and performance research — not generic policy statements.';
+        note.textContent = 'They want contextualised guidance for arts and performance research – not generic policy statements.';
 
         slide.appendChild(wrap);
         slide.appendChild(note);
@@ -561,7 +561,7 @@
         new Chart(canvas.getContext('2d'), {
           type: 'bar',
           data: {
-            labels: ['Discipline-specific examples', 'Workshops', 'Peer discussion / community of practice', 'Clearer policy'],
+            labels: ['Discipline-specific examples', 'Workshops', 'Peer discussion within community', 'Clearer policy'],
             datasets: [{
               data: [46, 27, 27, 15],
               backgroundColor: [
@@ -633,15 +633,15 @@
         wrap.innerHTML =
           '<div class="sequential-item fragment">' +
             '<strong>Ethical worry drives avoidance</strong>' +
-            'It\u2019s a reason for non-use, not an abstract attitude held at arm\u2019s length.' +
+            'It is a practical stance, not a theoretical concern' +
           '</div>' +
           '<div class="sequential-item fragment">' +
             '<strong>Building confidence may lower ethical vigilance</strong>' +
-            'The prescription \u201Cbuild skills\u201D can undermine caution if delivered without ethics framing.' +
+            'Any push to \u201Cbuild skills and confidence\u201D may lower ethical vigilance if delivered without ethics framing.' +
           '</div>' +
           '<div class="sequential-item fragment">' +
-            '<strong>The two cannot be treated as separate tracks</strong>' +
-            'Competence training and ethics training are not sequential \u2014 they must run together.' +
+            '<strong>Ethics and competence cannot be treated as separate tracks</strong>' +
+            'Competence training and ethics training are not sequential \u2013 they must run together.' +
           '</div>';
 
         slide.appendChild(wrap);
@@ -666,14 +666,14 @@
           ['Develop discipline-specific guidance', 'Generic policy won\u2019t fit this work.'],
           ['Define \u201CLLM use\u201D practically', 'A workable definition is a prerequisite for any disclosure framework.'],
           ['Pair competence with ethics', 'Never train one without the other.'],
-          ['Create space for peer dialogue', 'Surface practice where stigma currently silences it.'],
-          ['Acknowledge the full range of stances', 'Refusers, adopters, and the ambivalent all need to be accounted for.']
+          ['Create space for peer dialogue', 'Make practices transparent where stigma currently silences them.'],
+          ['Acknowledge the full range of stances', 'Refusers, adopters and the ambivalent all need to be accounted for.']
         ];
 
         wrap.innerHTML = items.map(function(item, i) {
           return '<div class="stepped-item fragment">' +
             '<span class="step-num">' + (i + 1) + '</span>' +
-            '<span><strong>' + item[0] + '</strong> \u2014 ' + item[1] + '</span>' +
+            '<span><strong>' + item[0] + '</strong> \u2013 ' + item[1] + '</span>' +
           '</div>';
         }).join('');
 
@@ -700,16 +700,16 @@
         wrap.innerHTML =
           '<div class="gap-stat">' +
             '<span class="stat-number stat-red">4.67<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
-            '<span class="stat-label">anticipated loss of ownership<br>users who have never tried</span>' +
+            '<span class="stat-label">anticipated loss of ownership<br>(users who have never tried)</span>' +
           '</div>' +
           '<div class="gap-stat">' +
             '<span class="stat-number stat-amber">2.31<span style="font-size:0.45em;opacity:0.6">&thinsp;/&thinsp;5</span></span>' +
-            '<span class="stat-label">felt loss of ownership<br>occasional users</span>' +
+            '<span class="stat-label">felt loss of ownership<br>(occasional users)</span>' +
           '</div>';
 
         var note = document.createElement('p');
         note.className = 'chart-note';
-        note.textContent = 'Intuition runs ahead of experience — a principled, pre-reflective stance on authorship, not a verdict learned from use.';
+        note.textContent = 'Intuition runs ahead of experience – a principled, pre-reflective stance on authorship, not a verdict learned from use.';
 
         slide.appendChild(wrap);
         slide.appendChild(note);
@@ -815,7 +815,7 @@
 
         var note = document.createElement('p');
         note.className = 'chart-note';
-        note.textContent = 'Students are making consequential decisions on ethics, disclosure and integrity — with little to guide them.';
+        note.textContent = 'Students are making consequential decisions on ethics, disclosure and integrity – with little to guide them.';
 
         slide.appendChild(wrap);
         slide.appendChild(note);
