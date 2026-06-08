@@ -15,7 +15,7 @@ Frame: this is the first systematic look at how our doctoral researchers actuall
 
 ## Overview
 
-- Anonymous questionnaire to all 45 C-DaRE postgraduate researchers
+- Anonymous questionnaire to all 45 C-DaRE PGRs
 - **26 responded** = 58% response rate
 - 8 sections: usage, tools, attitudes, ethics, authorship, quality, support needs, open text
 
