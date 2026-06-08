@@ -5,3 +5,4 @@ reveal/
 **/.DS_Store
 **/index-offline.html
 chart.umd.min.js
+reveal.js/
