@@ -51,7 +51,7 @@ This is an important leadership issue. Not everything valuable in dance research
 
 ---
 
-## C-DaRE is already dancing this tension
+## C-DaRE already demonstrates this tension
 
 - AI, robotics, disability and access
 - Roma communities, identity and dance
@@ -71,9 +71,9 @@ name colleagues and projects (as strong evidence): Whatley and Marsh’s work, C
 
 ## Three principles of strategic vision
 
-- 1. consolidate leadership in dance research
-- 2. extend reach through embodied methods
-- 3. make value legible
+- consolidate leadership in dance research
+- extend reach through embodied methods
+- make value legible
 
 Note: 
 
@@ -82,14 +82,14 @@ Note:
 
 ## Principle 1: consolidate leadership in dance research
 
-- maintain national and international leadership in dance research
-- support excellence-led REF outputs and practice research quality
-- protect the Centre’s collegial, ambitious and intellectually serious culture
-- build on PGR and ECR momentum as field-shaping capacity
-- sustain visible leadership in journals, conferences, networks, knowledge exchange, examining and advisory roles
+- excellence-led dance and practice research
+- strong REF, PGR and ECR cultures
+- visible national and international leadership
+- collegial, ambitious and intellectually serious research environment
 
 Note:
 - these are the priorities to build from C-DaRE’s existing strength.
+- sustain visible leadership in journals, conferences, networks, knowledge exchange, examining and advisory roles
 - continue to nourish the conditions that already make the Centre successful: research quality, collegiality, doctoral culture, practice research expertise, and international credibility.
 
 ---
@@ -102,6 +102,8 @@ Note:
 - the 'felt sense' of human experience
 - the human dimensions of technological and social change
 
+Route into: health, AI/digital technologies and creative cultures
+
 Note:
 - C-DaRE’s wider contribution is methodological as well as thematic.
 - It offers rigorous ways of researching the following (slides)
@@ -112,33 +114,32 @@ Note:
 
 ## Principle 3: make value legible
 
-C-DaRE’s work is strong, but its wider value is not always immediately understood outside dance research.
-
 Leadership task: articulation.
 
-Priorities:
-
-- complete the Centre communications and positioning review;
-- develop one clear proposition for what dance research does;
-- produce concrete examples for funders, university leadership, other disciplines, publics and partners;
-- increase visibility in selected professional, policy-facing and interdisciplinary contexts.
+- one clear Centre proposition
+- concrete examples of C-DaRE work
+- audience-specific language
+- visibility beyond dance-specific contexts
 
 Note:
+- C-DaRE’s work is strong, but its wider value is not always immediately understood outside dance research.
+- produce concrete examples for funders, university leadership, other disciplines, publics and partners;
+- increase visibility in selected professional, policy-facing and interdisciplinary contexts.
 This connects directly to work already underway in the Centre. The question is not just “what do we do?” but “how do we make that intelligible to different audiences without flattening it?” The Centre needs a core proposition, a small set of strong examples, and audience-specific language. That will support bids, partnerships, internal visibility and external recognition.
 
 ---
 
 ## Five-year trajectory
 
-- Year 1: articulate and align
-- Year 3: consolidate and test
-- Year 5: wider methodological and applied significance
+- Year 1: articulate, map and align
+- Year 3: consolidate, partner and test
+- Year 5: establish wider recognition
 
 
 Note: 
 1. Map current research, bids, partnerships, PGR activity and visibility against the three principles.
 3. Develop durable partnerships in selected areas: embodied technologies, health/wellbeing, heritage and cultural resilience. Test what has worked, learning from current REF cycle
-5. C-DaRE is recognised as a centre that leads dance research and demonstrates its wider methodological and applied significance.
+5. By Year 5, C-DaRE is recognised as a Centre that leads dance research and demonstrates its wider methodological and applied significance.
 
 ---
 
@@ -174,7 +175,7 @@ Note:
 
 ## Closing vision:
 
-To position C-DaRE as an Centre that leads the field precisely because it can show (and articulate) why dance research matters:
+To position C-DaRE as a Centre that leads the field precisely because it can show (and articulate) why dance research matters:
 
 - as artistic and cultural enquiry
 - as practice research
