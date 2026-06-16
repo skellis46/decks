@@ -185,3 +185,7 @@ To position C-DaRE as a Centre that leads the field precisely because it can sho
 Note:
 
 Dance remains the foundation. The next five years are about clearer positioning, stronger articulation, strategic partnerships, a more diverse pipeline, and confident leadership of dance research as a field whose methods and insights are needed beyond itself.
+
+---
+
+
