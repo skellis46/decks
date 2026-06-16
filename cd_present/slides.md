@@ -4,63 +4,62 @@
 ### Field-leading dance research, embodied methods, wider impact
 
 Note:
-This is a vision for positioning C-DaRE over the next five years. The emphasis is on how the Centre can build from its existing success, make its value clearer, and develop the next phase of its research leadership.
+This is a vision for positioning C-DaRE over the next five years. The emphasis is on how the Centre can build on its existing success, make its value clearer, and develop the next phase of its research leadership work.
 
 ---
 
 ## Central proposition
 
-dance is not only an object of study, but a way of producing methods, evidence and insight about embodied human experience.
+Dance is not only an object of study, but a way of producing methods, evidence and insight about embodied human experience.
 
 Note:
-- C-DaRE should lead dance research by showing that: [slide] 
-- I want to hold two things together. 
-	+ First, C-DaRE must remain visibly and confidently rooted in dance research: somatic practices, practice research, dance heritage, dance and technology, inclusive cultural practices
-	+ Second, it must show more clearly how dance research contributes to wider challenge-led contexts. 
-- Dance first; wider consequence second. It is to position dance research as a field with distinctive methods, knowledge and applications that are increasingly needed by other fields.
+- hold two things together. 
+	1. C-DaRE to remain visibly and confidently rooted in dance research: somatic practices, practice research, dance heritage, dance and technology, inclusive cultural practices
+	+ to show more clearly how dance research contributes to wider challenge-led contexts; that is, to position dance research as a field with distinctive methods, knowledge and applications that are increasingly needed by other fields.
 
 ---
 
 ## Why this matters now
 
-### Major contemporary questions are also questions of embodied human experience:
+### These questions need embodied methods
 
-- health, care and wellbeing
-- AI, robotics and digital technologies
-- creative cultures and cultural resilience
-- disability, access and inclusion
-- heritage and cultural identity
+- how bodies experience health, pain, care and wellbeing
+- how humans encounter AI, robotics and digital technologies
+- how movement shapes identity and belonging
+- how dance carries heritage, memory and cultural knowledge
 
 Note:
-- C-DaRE has the expertise to address these questions without diluting dance research.
-- The research environment requires challenge-led, transdisciplinary and impact-oriented work. Dance research can look marginal if it is described only as a specialist cultural field. But C-DaRE’s work shows that dance research has methods and knowledge that matter to urgent wider questions. The key here is to explain better what we already know how to do (rather than to chase fashion).
+If dance is not only an object of study but also a way of producing methods, evidence and insight, then the strategic question is: where are those methods needed now?
+
+These are not all challenge areas in the same way, and they are not all new to C-DaRE. Some, especially heritage, memory and cultural identity, are already central to dance research. The point is that each involves questions of embodied human experience that dance research is unusually well placed to study.
+
+This is why C-DaRE’s national and international positioning matters. The Centre should be known not only for excellent research about dance, but for showing what dance research makes knowable.
 
 ---
 
-## The productive tension
+## The strategic tension
 
-- protect long-term artistic, critical, archival, somatic and practice-based enquiry;
-- build credible routes to partnerships, income, impact and public value.
-
-
+- protect the depth and specificity of dance research
+- build credible routes to partnership, income, impact and public value
+- position C-DaRE through translation without dilution
 
 Note:
-A healthy C-DaRE must therefore do two things:
-Some of the most important dance research is not easily translated into instrumental funding language (Thoms, Lee, Burrows, Davies, Wood)
-This is an important leadership issue. Not everything valuable in dance research starts with a funder category. Some of the field’s deepest work takes time and moves through artistic, cultural, embodied and critical enquiry. But that does not absolve us from the need to build income, partnerships and impact. The role of the Centre Director is to hold this tension honestly and productively.
+This is the central leadership tension. Dance research often works through long-term artistic, critical, archival, somatic and practice-based enquiry. That work should not be flattened into instrumental language.
+
+But the Centre also has to build credible routes to partnership, income, impact and public value. The task is to translate the value of the work without reducing it.
+
+Nationally and internationally, this positions C-DaRE as a Centre that can lead the field from within dance research, while also showing why dance research matters beyond itself.
 
 ---
 
 ## C-DaRE already demonstrates this tension
 
-- AI, robotics, disability and access
 - Roma communities, identity and dance
 - somatic practice and chronic pain
+- AI, robotics, disability and access
 - dance heritage and cultural memory 
 - participatory practice in creative cultures
 - practice research as rigorous knowledge production
-
-
 
 Note:
 Examples across the Centre show dance research operating at full strength in wider contexts
@@ -76,6 +75,7 @@ name colleagues and projects (as strong evidence): Whatley and Marsh’s work, C
 - make value legible
 
 Note: 
+Together, these principles position C-DaRE nationally and internationally as a Centre that leads dance research through its artistic, cultural, methodological and applied significance.
 
 
 ---
@@ -143,21 +143,6 @@ Note:
 
 ---
 
-## What success would look like
-
-- sustained excellence in dance research and practice research
-- stronger and more diverse bid and partnership pipeline
-- increased invitations from dance and non-dance contexts
-- clear Centre proposition and case studies in use
-- healthy PGR and ECR pipeline
-- stronger recognition within CU Group priorities
-
-Note:
-A mixed evidence base.
-This answers the “how will we know?” question without reducing the vision to a spreadsheet. Some indicators are quantitative: bid numbers, income, PGR completions, partnerships, invitations. Others are qualitative: better recognition, stronger examples, clearer narratives, improved practice research evidencing. Both matter.
-
----
-
 ## Leadership approach
 
 - clarity about direction and expectations
@@ -173,9 +158,25 @@ Note:
 
 ---
 
+## What success would look like
+
+- sustained excellence in dance research and practice research
+- stronger and more diverse bid and partnership pipeline
+- increased invitations from dance and non-dance contexts
+- clear Centre proposition and case studies in use
+- healthy PGR and ECR pipeline
+- stronger recognition within CU Group priorities
+
+Note:
+A mixed evidence base.
+This answers the “how will we know?” question without reducing the vision to a spreadsheet. Some indicators are quantitative: bid numbers, income, PGR completions, partnerships, invitations. Others are qualitative: better recognition, stronger examples, clearer narratives, improved practice research evidencing. Both matter.
+
+
+---
+
 ## Closing vision:
 
-To position C-DaRE as a Centre that leads the field precisely because it can show (and articulate) why dance research matters:
+To position C-DaRE as a Centre that leads the field precisely because it can show why dance research matters:
 
 - as artistic and cultural enquiry
 - as practice research
