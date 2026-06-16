@@ -15,7 +15,7 @@ Dance is not only an object of study, but a way of producing methods, evidence a
 Note:
 - hold two things together. 
 	1. C-DaRE to remain visibly and confidently rooted in dance research: somatic practices, practice research, dance heritage, dance and technology, inclusive cultural practices
-	+ to show more clearly how dance research contributes to wider challenge-led contexts; that is, to position dance research as a field with distinctive methods, knowledge and applications that are increasingly needed by other fields.
+	2. to show more clearly how dance research contributes to wider challenge-led contexts; that is, to position dance research as a field with distinctive methods, knowledge and applications that are increasingly needed by other fields.
 
 ---
 
@@ -31,9 +31,9 @@ Note:
 Note:
 If dance is not only an object of study but also a way of producing methods, evidence and insight, then the strategic question is: where are those methods needed now?
 
-These are not all challenge areas in the same way, and they are not all new to C-DaRE. Some, especially heritage, memory and cultural identity, are already central to dance research. The point is that each involves questions of embodied human experience that dance research is unusually well placed to study.
+These are not all challenge areas in the same way, and they are not all new to C-DaRE. Some, especially heritage, memory and cultural identity, are already central to dance research. The point is that each involves questions of embodied human experience that dance and embodied research is unusually well placed to study.
 
-This is why C-DaRE’s national and international positioning matters. The Centre should be known not only for excellent research about dance, but for showing what dance research makes knowable.
+This is why C-DaRE’s national and international positioning matters. The Centre should be known not only for excellent research about dance, but for showing what dance research makes knowable (and how).
 
 ---
 
@@ -52,19 +52,19 @@ Nationally and internationally, this positions C-DaRE as a Centre that can lead 
 
 ---
 
-## C-DaRE already demonstrates this tension
+## From strength to strategic position
 
-- Roma communities, identity and dance
-- somatic practice and chronic pain
-- AI, robotics, disability and access
-- dance heritage and cultural memory 
-- participatory practice in creative cultures
-- practice research as rigorous knowledge production
+- C-DaRE already has the research depth
+- the next phase is to organise, articulate and connect it more deliberately
+- the aim is stronger positioning without a change of identity
 
 Note:
-Examples across the Centre show dance research operating at full strength in wider contexts
-These are not departures from dance research. They show what dance research can know, do and change.
-name colleagues and projects (as strong evidence): Whatley and Marsh’s work, Cisneros’ work, Meehan’s work, Crawley and DanceMap, Stamp’s work, Burrows and practice research all show that C-DaRE is already doing this. The next step is to position it more clearly.
+The Centre already has major strengths. For example: Whatley and Marsh on AI, robotics, disability and access; Cisneros on Roma communities, identity and dance; Meehan on somatics and chronic pain; Crawley and DanceMap on heritage and cultural memory; Stamp on participatory practice in creative cultures; Burrows and others on practice research as rigorous knowledge production.
+
+The five-year task is to turn that depth into clearer strategic positioning: nationally and internationally within dance research, and more visibly in relation to selected wider contexts where embodied methods matter.
+
+That is why my vision is organised around three principles.
+
 
 ---
 
@@ -96,25 +96,24 @@ Note:
 
 ## Principle 2: extend reach through embodied methods
 
-- movement, sensation and attention
-- embodiment, care and vulnerability
-- participation, relation and identity
-- the 'felt sense' of human experience
-- the human dimensions of technological and social change
+- research movement, sensation, attention and bodily knowledge
+- study care, access, pain, vulnerability and agency
+- understand how identity, memory and belonging are lived through bodies
+- examine how technologies reshape embodied experience
 
-Route into: health, AI/digital technologies and creative cultures
+Route into: health and wellbeing, AI/digital technologies, creative cultures and cultural resilience
 
 Note:
-- C-DaRE’s wider contribution is methodological as well as thematic.
-- It offers rigorous ways of researching the following (slides)
-- Other fields often recognise that bodies, movement, experience and relation matter, but they do not always have the tools to study them. Dance research does. 
-- creates strong routes into interdisciplinary work: health and wellbeing, AI/digital technologies, creative cultures and any work that values the nature of human experience.
+C-DaRE’s wider contribution is methodological as well as thematic. Where other fields often recognise that bodies and experience matter, they do not always have the tools to study them. Dance research does.
+
+[slides]
+
+methods create strong routes into interdisciplinary work: health and wellbeing, where questions of pain, care, ageing, disability and social connection are embodied; AI and digital technologies, where human experience is being reshaped through interfaces, data, robotics and screens; and creative cultures, where humans in motion carry memory, identity, participation and cultural value.
+
 
 ---
 
 ## Principle 3: make value legible
-
-Leadership task: articulation.
 
 - one clear Centre proposition
 - concrete examples of C-DaRE work
@@ -138,7 +137,7 @@ This connects directly to work already underway in the Centre. The question is n
 
 Note: 
 1. Map current research, bids, partnerships, PGR activity and visibility against the three principles.
-3. Develop durable partnerships in selected areas: embodied technologies, health/wellbeing, heritage and cultural resilience. Test what has worked, learning from current REF cycle
+3. Develop durable partnerships in selected areas: embodied technologies, health/wellbeing, heritage and cultural resilience. Test what has worked; ensure lessons learned from current REF cycle
 5. By Year 5, C-DaRE is recognised as a Centre that leads dance research and demonstrates its wider methodological and applied significance.
 
 ---
@@ -153,7 +152,7 @@ Note:
 
 Note:
 - Culture is not separate from strategy. It is one of the conditions through which quality, income, impact and sustainability become possible.
-- My approach would be to combine:
+- My approach would be to combine: [slides]
 - The Centre Director role is not only about strategy documents. It is about getting the best out of people, supporting ambition, making decisions, holding accountability, and keeping the Centre’s culture healthy. Bid-writing retreats, PGR leadership, practice research leadership and the communications work all provide evidence for this approach.
 
 ---
@@ -181,7 +180,7 @@ To position C-DaRE as a Centre that leads the field precisely because it can sho
 - as artistic and cultural enquiry
 - as practice research
 - as embodied method
-- a way of addressing urgent questions in health, technology, disability, heritage, identity and cultural life.
+- as a way of addressing urgent questions in health, technology, heritage, identity and cultural life.
 
 Note:
 
