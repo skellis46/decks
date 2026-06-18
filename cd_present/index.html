@@ -20,6 +20,10 @@
       --cov-purple: #2B1C43;
       --cov-mid:    #5B289F;
       --cov-white:  #FFFFFF;
+
+      /* dialled down from the black-theme defaults (2.5em / 1.6em) */
+      --r-heading1-size: 2.1em;
+      --r-heading2-size: 1.35em;
     }
 
     #cov-wordmark {
@@ -28,13 +32,20 @@
     }
     #cov-wordmark img { height: 40px; display: block; }
 
-    .reveal h1, .reveal h2 { color: var(--cov-white); }
+    .reveal h1 { color: var(--cov-white); font-size: 2.1em; }
+    .reveal h2 { color: var(--cov-white); font-size: 1.4em; }
     .reveal h3 {
       color: var(--cov-blue);
       font-size: 0.7em; font-weight: 600;
       letter-spacing: 0.12em; text-transform: uppercase;
       margin-bottom: 0.15em;
     }
+
+    /* looser, less dense bullet lists */
+    .reveal .slides ul,
+    .reveal .slides ol { line-height: 1.3; }
+    .reveal .slides ul > li,
+    .reveal .slides ol > li { margin: 0.55em 0; }
   </style>
 </head>
 
@@ -59,36 +70,74 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
 
   <script>
+    /* ----------------------------------------------------------------
+       Speaker-view tweaks (default layout):
+         - shrink the current-slide column
+         - enlarge the notes text
+       The notes plugin is loaded from the CDN, so its speaker-view.html
+       can't be edited directly. Instead we catch the speaker window when
+       it opens and inject a small style override once it has rendered.
+       Adjust the two values marked TWEAK below.
+    ---------------------------------------------------------------------- */
+    (function () {
+      var SPEAKER_CSS =
+        '#current-slide { width: 42% !important; }' +              /* TWEAK: slide width */
+        '#upcoming-slide { width: 58% !important; left: 42% !important; right: auto !important; height: 28% !important; }' +  /* TWEAK: upcoming height */
+        '#speaker-controls { width: 58% !important; left: 42% !important; right: auto !important; top: 28% !important; height: 72% !important; }' +
+        '.speaker-controls-notes .value { font-size: 30px !important; line-height: 1.5 !important; }'; /* TWEAK: notes text size */
+
+      var nativeOpen = window.open;
+      window.open = function () {
+        var win = nativeOpen.apply(window, arguments);
+        if (!win) return win;
+        var tries = 0;
+        var iv = setInterval(function () {
+          tries++;
+          try {
+            var doc = win.document;
+            // Only touch reveal's speaker view, and only once it has rendered.
+            if (doc && doc.querySelector('.speaker-controls-notes') &&
+                !doc.getElementById('cov-speaker-overrides')) {
+              var s = doc.createElement('style');
+              s.id = 'cov-speaker-overrides';
+              s.textContent = SPEAKER_CSS;
+              doc.head.appendChild(s);
+              clearInterval(iv);
+            }
+          } catch (e) { /* not ready yet — ignore and retry */ }
+          if (win.closed || tries > 100) clearInterval(iv);  // ~30s safety net
+        }, 300);
+        return win;
+      };
+    })();
+
     Reveal.initialize({
       hash: true,
       plugins: [RevealMarkdown, RevealNotes, RevealHighlight]
     }).then(function () {
 
-      // Make every bullet slide in one at a time (skip speaker-notes lists)
-      }).then(function () {
+      // Reveal each piece of content one click at a time.
+      // Titles AND subtitles (h1/h2/h3) stay visible on arrival;
+      // paragraphs, blockquotes, code and list items all fragment in.
+      document.querySelectorAll('.reveal .slides section').forEach(function (section) {
+        // skip the container of a vertical stack
+        if (section.querySelector(':scope > section')) return;
+        // leave any custom animated slide (data-step) untouched
+        if (section.hasAttribute('data-step') || section.querySelector('[data-step]')) return;
 
-  // Reveal every piece of content one click at a time.
-  // The <h2> slide title stays visible; sub-headings, paragraphs
-  // and list items all fragment in.
-  document.querySelectorAll('.reveal .slides section').forEach(function (section) {
-    // skip the container of a vertical stack
-    if (section.querySelector(':scope > section')) return;
-    // leave any custom animated slide (data-step) untouched
-    if (section.hasAttribute('data-step') || section.querySelector('[data-step]')) return;
-
-    Array.prototype.forEach.call(section.children, function (el) {
-      if (el.matches('aside.notes')) return;        // speaker notes
-      if (el.matches('h1, h2')) return;             // keep the title visible
-      if (el.matches('ul, ol')) {
-        el.querySelectorAll('li').forEach(function (li) {
-          li.classList.add('fragment', 'fade-up');
+        Array.prototype.forEach.call(section.children, function (el) {
+          if (el.matches('aside.notes')) return;        // speaker notes
+          if (el.matches('h1, h2, h3')) return;         // keep title + subtitle visible
+          if (el.matches('ul, ol')) {
+            el.querySelectorAll('li').forEach(function (li) {
+              li.classList.add('fragment', 'fade-up');
+            });
+          } else if (el.matches('h4, p, blockquote, pre')) {
+            el.classList.add('fragment', 'fade-up');     // stray sub-content
+          }
         });
-      } else if (el.matches('h3, h4, p, blockquote, pre')) {
-        el.classList.add('fragment', 'fade-up');    // sub-headings and stray text
-      }
-    });
-  });
-  Reveal.sync();
+      });
+      Reveal.sync();
 
     });
   </script>
