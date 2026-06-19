@@ -9,6 +9,8 @@ Note:
 
 ---
 
+## Foundational idea
+
 ### Dance is not only an object of study, but a way of producing methods, evidence and insight into human experience.
 
 Note:
@@ -17,7 +19,9 @@ Note:
 
 ---
 
-### Embodied methods are rigorous ways of researching movement, bodily experience, sensation, relation and practice as forms of evidence and knowledge.
+## What are embodied methods?
+
+### Embodied methods treat movement, bodily experience, sensation and practice as rigorous forms of evidence and knowledge.
 
 Note:
 - These methods give us routes into health, AI/digital technologies and creative cultures.
@@ -31,21 +35,21 @@ Note:
 - how our sense of _being bodies_ shapes culture, identity and belonging
 
 Note:
-- each has Qs re human experience that body-centred research is ideal to address
-- should be known for excellent research about dance AND what dance and embodied research makes knowable
+- each has Qs regarding human experience that body-centred research is ideal to address
+- should be known for excellent research about dance AND what embodied research makes knowable
 - reveals key strategic tension
 
 ---
 
 ## The strategic tension
 
-- protect the depth and specificity of dance research
+- protect & nourish the depth and specificity of dance research
 - build credible routes to partnership, income, impact and public value
 - position C-DaRE through translation without dilution
 
 Note:
 - ONE: dance research often works through long-term artistic, critical, archival, somatic and practice-based enquiry. That work should not be flattened into instrumental language.
-- Nationally and internationally, C-DaRE as a Centre that can lead the field from within dance research, while also showing why dance research matters beyond itself.
+- SUM: Nationally and internationally, C-DaRE as a Centre that can lead the field from within dance research, while also showing why dance research matters beyond itself.
 
 ---
 
