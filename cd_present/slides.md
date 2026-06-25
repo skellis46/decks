@@ -21,10 +21,10 @@ Note:
 
 ## What are embodied methods?
 
-### Embodied methods treat movement, bodily experience, sensation and practice as rigorous forms of evidence and knowledge.
+### Embodied methods treat movement, bodily experience, sensation and practice as rigorous forms of discovery, evidence and knowledge.
 
 Note:
-- These methods give us routes into health, AI/digital technologies and creative cultures.
+- SUM: other disciplines need these methods
 
 ---
 
@@ -59,8 +59,9 @@ Note:
 - next phase is to organise and articulate more deliberately
 
 Note:
-- ONE: For example: Cisneros on Roma communities, identity and dance; Meehan on somatics and chronic pain; Whatley and Marsh on AI, robotics and disability; Crawley, Waelde, Stamp and (me) on heritage and cultural memory.
+- ONE: For example: Meehan on somatics and chronic pain; Whatley and Marsh on AI, robotics and disability; PGR Heni Hales' embodied archival work with the Tavistock Institute.
 - SUM: five-years: turn our research depth into clearer strategic positioning: nationally and internationally within dance research, and more visibly in selected wider contexts where embodied methods matter.
+- three principles underpinning my vision
 
 
 ---
@@ -134,8 +135,8 @@ Note:
 ## Five-year plan
 ### Year 5: shape the field beyond dance
 
-- C-DaRE is recognised as field-leading in dance research
-- embodied, participatory and practice-based methods are sought by selected non-dance partners
+- C-DaRE continues to be recognised as field-leading in dance research
+- embodied, participatory and practice-based methods are sought by selected non-dance partners in challenge-led research
 - dance research has a clearer strategic role especially in health and AI/digital technologies
 
 
@@ -148,7 +149,7 @@ PRE: By “beyond dance”, I do not mean away from dance. I mean from dance: us
 
 - research quality: strong REF, PGR and practice research outcomes
 - income and partnership: more diverse bids, partners and funded routes
-- recognition: invitations from selected non-dance contexts
+- recognition: invitations from challenge-led non-dance contexts
 - usability: proposition and case studies used in bids, REF narratives and advocacy
 
 Note:
