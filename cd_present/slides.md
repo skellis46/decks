@@ -15,7 +15,7 @@ Note:
 
 Note:
 - remain rooted in dance research: somatic practices, dance and technology, inclusive cultural practices ...
-- show more clearly how dance research contributes to wider challenge-led contexts; dance research is field with distinctive methods, knowledge and applications that are increasingly needed by other fields.
+- show more clearly how dance research contributes to wider challenge-led contexts; dance research is field with distinctive embodied methods, knowledge and applications that are increasingly needed by other fields.
 
 ---
 
@@ -48,7 +48,7 @@ Note:
 - position C-DaRE through translation without dilution
 
 Note:
-- ONE: dance research often works through long-term artistic, critical, archival, somatic and practice-based enquiry. That work should not be flattened into instrumental language.
+- ONE: dance research often works through long-term artistic, critical, archival, and somatic enquiry. That work should not be flattened into instrumental language.
 - SUM: Nationally and internationally, C-DaRE as a Centre that can lead the field from within dance research, while also showing why dance research matters beyond itself.
 
 ---
@@ -87,7 +87,7 @@ Note:
 Note:
 
 - ONE: about what C-DaRE can offer other fields; they often recognise that bodies and experience matter, they do not always have the tools to study them. DR does.
-- TWO: interdisciplinary ROUTE: health: pain, care, ageing, disability, etc are embodied; AI and digital technologies:  experience reshaped by interfaces, data and robotics; creative cultures: humans in motion carry memory, identity and cultural value.
+- TWO: interdisciplinary ROUTE: health: pain, care, ageing, disability, etc are embodied; AI and digital technologies: experience being reshaped by interfaces, data and robotics; creative cultures: humans in motion carry memory, identity and cultural value.
 
 ---
 
@@ -150,7 +150,7 @@ PRE: By “beyond dance”, I do not mean away from dance. I mean from dance: us
 - research quality: strong REF, PGR and practice research outcomes
 - income and partnership: more diverse bids, partners and funded routes
 - recognition: invitations from challenge-led non-dance contexts
-- usability: proposition and case studies used in bids, REF narratives and advocacy
+- usability: proposition and case studies (P1) used in bids, REF narratives and advocacy
 
 Note:
 - quantitative: bid types and numbers, diverse income streams, PGR completions, publication outside field (inc trade), new partnerships, invitations. 
