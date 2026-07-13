@@ -46,6 +46,39 @@
     .reveal .slides ol { line-height: 1.3; }
     .reveal .slides ul > li,
     .reveal .slides ol > li { margin: 0.55em 0; }
+
+    /* video embeds: click-to-play-fullscreen overlay */
+    .video-embed {
+      position: relative;
+      width: 560px;
+      max-width: 90%;
+      aspect-ratio: 16 / 9;
+      margin: 0 auto;
+    }
+    .video-embed iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-embed iframe:fullscreen,
+    .video-embed iframe:-webkit-full-screen {
+      width: 100vw;
+      height: 100vh;
+    }
+    /* invisible click-catcher — the video platform already shows its own
+       play icon on the thumbnail, so this just adds the autoplay+fullscreen
+       behaviour without drawing a second button on top of it */
+    .video-fullscreen-btn {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      padding: 0;
+    }
   </style>
 </head>
 
@@ -138,6 +171,46 @@
         });
       });
       Reveal.sync();
+
+      // Video embeds: one click starts playback (autoplay=1) AND requests
+      // fullscreen on the iframe element itself, since this is a genuine
+      // user-gesture click on our own page (not something inside the
+      // cross-origin iframe, where autoplay+fullscreen would be blocked).
+      document.querySelectorAll('.video-fullscreen-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var iframe = document.getElementById(btn.dataset.target);
+          if (!iframe) return;
+          var src = iframe.getAttribute('src');
+          if (src.indexOf('autoplay=1') === -1) {
+            src += (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1';
+            iframe.setAttribute('src', src);
+          }
+          var request = iframe.requestFullscreen || iframe.webkitRequestFullscreen ||
+                        iframe.mozRequestFullScreen || iframe.msRequestFullscreen;
+          if (request) request.call(iframe);
+          btn.style.display = 'none';
+        });
+      });
+
+      // Once the iframe has focus (from clicking play / using its controls),
+      // arrow-key presses go to the video's own document and never reach
+      // Reveal's keyboard handler — even after exiting fullscreen. Hand
+      // focus back to the top-level page whenever fullscreen ends or the
+      // slide changes, so left/right arrow navigation keeps working.
+      function releaseVideoFocus() {
+        if (document.activeElement && document.activeElement.tagName === 'IFRAME') {
+          document.activeElement.blur();
+        }
+      }
+      ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange']
+        .forEach(function (evt) {
+          document.addEventListener(evt, function () {
+            var fsEl = document.fullscreenElement || document.webkitFullscreenElement ||
+                       document.mozFullScreenElement || document.msFullscreenElement;
+            if (!fsEl) releaseVideoFocus();
+          });
+        });
+      Reveal.on('slidechanged', releaseVideoFocus);
 
     });
   </script>
