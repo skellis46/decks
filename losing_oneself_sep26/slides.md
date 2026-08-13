@@ -1,7 +1,13 @@
 
 
-## Losing oneself
-### [subtitle — add here]
+<!-- blank -->
+
+---
+
+## Thresholds of the self
+### Practice research and the question of data
+
+<div class="title-byline">Simon Ellis</div>
 
 Note:
 - speaker notes here
@@ -19,40 +25,57 @@ Note:
 
 ---
 
-## [Section 1 heading]
-
-- point one
-- point two
-- point three
+## Five positions on data in practice research
 
 Note:
 
 
 ---
 
-## [Section 2 heading]
+## Haseman (2006)
+### Expand the category
 
-- point one
-- point two
-
-Note:
-
-
----
-
-## [Section 3 heading]
-
-- point one
-- point two
+> Artistic forms can be data.
 
 Note:
 
 
 ---
 
-## Thank you
+## Gisler (2018)
+### Call it material
 
-### [closing line]
+> An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
+
+Note:
+
+
+---
+
+## Nelson (2013)
+### Differentiate categories
+
+> Data, evidence, testimony, documentation and embodied knowing need not be collapsed together.
+
+Note:
+
+
+---
+
+## Arlander (2017)
+### Make the categories relational and mobile
+
+> The same thing can function as data, material or output at different moments.
+
+Note:
+
+
+---
+
+## ELIA (2025)
+### Question the institutional regime surrounding the category
+
+> Naming something data has methodological and political consequences.
 
 Note:
 
