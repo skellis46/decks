@@ -41,6 +41,13 @@
       margin-bottom: 0.15em;
     }
 
+    /* extra breathing room above this slide's title */
+    .reveal h2.pushed-down { margin-top: 2.5em; }
+
+    /* diagram slide title: smaller + a bit more space above, so the
+       diagram below it has room to breathe at both top and bottom */
+    .reveal h2.dft-title { font-size: 1.05em; margin-top: 1em; margin-bottom: 0.4em; }
+
     /* title-slide byline: presenter name, right-aligned below the subtitle */
     .title-byline {
       margin-top: 2.4em;
@@ -221,6 +228,25 @@
           });
         });
       Reveal.on('slidechanged', releaseVideoFocus);
+
+      // Safety net: the C-DaRE wordmark is pinned to the real viewport
+      // (position: fixed), so it doesn't scale down with the presentation.
+      // On short/narrow windows a vertically-centred slide can end up
+      // close to that corner. Never let a slide's content render above a
+      // safe minimum offset from the top of the slide.
+      var MIN_SLIDE_TOP = 70; // in Reveal's internal 960x700 units
+      function clampSlideTops() {
+        document.querySelectorAll('.reveal .slides section').forEach(function (sec) {
+          if (sec.classList.contains('stack')) return;
+          var top = parseFloat(sec.style.top);
+          if (!isNaN(top) && top < MIN_SLIDE_TOP) {
+            sec.style.top = MIN_SLIDE_TOP + 'px';
+          }
+        });
+      }
+      Reveal.on('slidechanged', function () { setTimeout(clampSlideTops, 30); });
+      window.addEventListener('resize', function () { setTimeout(clampSlideTops, 60); });
+      setTimeout(clampSlideTops, 50);
 
     });
   </script>
