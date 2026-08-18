@@ -1,8 +1,10 @@
-# WP2 — Mapping European Dance Heritage
+# WP2: Mapping European Dance Heritage
 
-### Reporting Period 2 review · 25 September 2026
+### Coventry University / C-DaRE
 
-Coventry University · C-DaRE
+<hr class="title-divider">
+
+### Joe Askew, Marie-Louise Crawley, Rachael Davies, Simon Ellis, Lily Hayward-Smith, Kathryn Stamp & Charlotte Waelde
 
 Note:
 Title slide. Update presenter name as needed. WP2 slot: 25-minute session (10 min presentation / 10 min Q&A, per Ben's guidance), immediately followed by WP1+8's combined slot — keep to time.
@@ -11,9 +13,9 @@ Title slide. Update presenter name as needed. WP2 slot: 25-minute session (10 mi
 
 ## WP2 at a glance
 
-- Survey → European dance heritage knowledge graph (shared with WP4)
+- Survey --> European dance heritage knowledge graph (shared with WP4)
 - D2.1 (M3) and D2.2 (M18) delivered
-- Analysis & application continue — not closed
+- Analysis & application continue – not closed
 
 Note:
 WP2's objective is to feed survey data into the shared European artistic dance heritage Knowledge Graph — a single artefact developed jointly with WP4's Wikibase infrastructure, not two separate graphs. D2.1 (Survey tool) delivered M3; D2.2 (Knowledge Graph) submitted 29 June 2026 at M18. Both on schedule.
@@ -24,12 +26,22 @@ Reviewers already have the recruitment numbers and headline findings from the pe
 
 ---
 
-## From survey to graph — one illustration
+## From survey to graph
 
-- Survey data → baseline in the Wikibase graph
-- Structured data ingested; open text is harder
-
-[Visual: bipartite network figure — organisations × economic sector, n=126 — from D2.2. Build from the D2.2 appendix figure (Gephi, ForceAtlas2 layout; node colour = sector: purple non-profit / orange public / green private).]
+<div class="split-layout">
+  <div class="split-text">
+    <ul>
+      <li class="fragment fade-up">Survey data --> baseline in the Wikibase graph</li>
+      <li class="fragment fade-up">Structured data ingested; open text is harder</li>
+    </ul>
+  </div>
+  <div class="split-image">
+    <div class="graph-panel">
+      <img src="graph-example.png" alt="Knowledge graph sector example">
+      <p class="graph-caption">Knowledge graph sector example</p>
+    </div>
+  </div>
+</div>
 
 Note:
 D2.2 supplied the survey-derived baseline population of actors and attributes into the shared Wikibase-hosted graph. The structured, closed-question data has gone in reasonably well; the free-text/open-ended fields are the harder, still-developing part — this sets up the open-text discussion later in the deck.
