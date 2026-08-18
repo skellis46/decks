@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dm-wp2-rp2 · C-DaRE</title>
+
+  <!--
+    All slide content lives in dm-wp2-rp2-slides.md — edit that file and refresh.
+    TO RUN: python3 -m http.server → http://localhost:8000
+  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/black.css" id="theme">
+
+  <style>
+    :root {
+      --cov-blue:   #0074E7;
+      --cov-purple: #2B1C43;
+      --cov-mid:    #5B289F;
+      --cov-white:  #FFFFFF;
+
+      /* dialled down from the black-theme defaults (2.5em / 1.6em) */
+      --r-heading1-size: 2.1em;
+      --r-heading2-size: 1.35em;
+    }
+
+    #cov-wordmark {
+      position: fixed; top: 16px; right: 24px;
+      z-index: 100; pointer-events: none;
+    }
+    #cov-wordmark img { height: 40px; display: block; }
+
+    .reveal h1 { color: var(--cov-white); font-size: 2.1em; }
+    .reveal h2 { color: var(--cov-white); font-size: 1.4em; }
+    .reveal h3 {
+      color: var(--cov-blue);
+      font-size: 0.7em; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      margin-bottom: 0.15em;
+    }
+
+    /* extra breathing room above this slide's title */
+    .reveal h2.pushed-down { margin-top: 2.5em; }
+
+    /* diagram slide title: smaller + a bit more space above, so the
+       diagram below it has room to breathe at both top and bottom */
+    .reveal h2.dft-title { font-size: 1.05em; margin-top: 1em; margin-bottom: 0.4em; }
+
+    /* title-slide byline: presenter name, right-aligned below the subtitle */
+    .title-byline {
+      margin-top: 2.4em;
+      padding-right: 0.8em;
+      text-align: right;
+      color: var(--cov-white);
+      font-size: 0.5em; font-weight: 400;
+      text-transform: none; letter-spacing: 0.01em;
+    }
+
+    /* looser, less dense bullet lists */
+    .reveal .slides ul,
+    .reveal .slides ol { line-height: 1.3; }
+    .reveal .slides ul > li,
+    .reveal .slides ol > li { margin: 0.55em 0; }
+
+    /* video embeds: click-to-play-fullscreen overlay */
+    .video-embed {
+      position: relative;
+      width: 560px;
+      max-width: 90%;
+      aspect-ratio: 16 / 9;
+      margin: 0 auto;
+    }
+    .video-embed iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-embed iframe:fullscreen,
+    .video-embed iframe:-webkit-full-screen {
+      width: 100vw;
+      height: 100vh;
+    }
+    /* invisible click-catcher — the video platform already shows its own
+       play icon on the thumbnail, so this just adds the autoplay+fullscreen
+       behaviour without drawing a second button on top of it */
+    .video-fullscreen-btn {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cov-wordmark">
+    <img src="cov-logo.png" alt="C-DaRE · Coventry University">
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="dm-wp2-rp2-slides.md"
+               data-separator="\r?\n---\r?\n"
+               data-separator-vertical="\r?\n----\r?\n"
+               data-separator-notes="^Note:">
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
+
+  <script>
+    /* ----------------------------------------------------------------
+       Speaker-view tweaks (default layout):
+         - shrink the current-slide column
+         - enlarge the notes text
+       The notes plugin is loaded from the CDN, so its speaker-view.html
+       can't be edited directly. Instead we catch the speaker window when
+       it opens and inject a small style override once it has rendered.
+       Adjust the two values marked TWEAK below.
+    ---------------------------------------------------------------------- */
+    (function () {
+      var SPEAKER_CSS =
+        '#current-slide { width: 42% !important; }' +              /* TWEAK: slide width */
+        '#upcoming-slide { width: 58% !important; left: 42% !important; right: auto !important; height: 28% !important; }' +  /* TWEAK: upcoming height */
+        '#speaker-controls { width: 58% !important; left: 42% !important; right: auto !important; top: 28% !important; height: 72% !important; }' +
+        '.speaker-controls-notes .value { font-size: 30px !important; line-height: 1.5 !important; }'; /* TWEAK: notes text size */
+
+      var nativeOpen = window.open;
+      window.open = function () {
+        var win = nativeOpen.apply(window, arguments);
+        if (!win) return win;
+        var tries = 0;
+        var iv = setInterval(function () {
+          tries++;
+          try {
+            var doc = win.document;
+            // Only touch reveal's speaker view, and only once it has rendered.
+            if (doc && doc.querySelector('.speaker-controls-notes') &&
+                !doc.getElementById('cov-speaker-overrides')) {
+              var s = doc.createElement('style');
+              s.id = 'cov-speaker-overrides';
+              s.textContent = SPEAKER_CSS;
+              doc.head.appendChild(s);
+              clearInterval(iv);
+            }
+          } catch (e) { /* not ready yet — ignore and retry */ }
+          if (win.closed || tries > 100) clearInterval(iv);  // ~30s safety net
+        }, 300);
+        return win;
+      };
+    })();
+
+    Reveal.initialize({
+      hash: true,
+      plugins: [RevealMarkdown, RevealNotes, RevealHighlight]
+    }).then(function () {
+
+      // Reveal each piece of content one click at a time.
+      // Titles, subtitles and blockquotes (h1/h2/h3/blockquote) stay visible
+      // on arrival; paragraphs, code and list items all fragment in.
+      document.querySelectorAll('.reveal .slides section').forEach(function (section) {
+        // skip the container of a vertical stack
+        if (section.querySelector(':scope > section')) return;
+        // leave any custom animated slide (data-step) untouched
+        if (section.hasAttribute('data-step') || section.querySelector('[data-step]')) return;
+
+        Array.prototype.forEach.call(section.children, function (el) {
+          if (el.matches('aside.notes')) return;        // speaker notes
+          if (el.matches('h1, h2, h3, blockquote')) return;  // keep title + subtitle + quote visible
+          if (el.matches('ul, ol')) {
+            el.querySelectorAll('li').forEach(function (li) {
+              li.classList.add('fragment', 'fade-up');
+            });
+          } else if (el.matches('h4, p, pre')) {
+            el.classList.add('fragment', 'fade-up');     // stray sub-content
+          }
+        });
+      });
+      Reveal.sync();
+
+      // Video embeds: one click starts playback (autoplay=1) AND requests
+      // fullscreen on the iframe element itself, since this is a genuine
+      // user-gesture click on our own page (not something inside the
+      // cross-origin iframe, where autoplay+fullscreen would be blocked).
+      document.querySelectorAll('.video-fullscreen-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var iframe = document.getElementById(btn.dataset.target);
+          if (!iframe) return;
+          var src = iframe.getAttribute('src');
+          if (src.indexOf('autoplay=1') === -1) {
+            src += (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1';
+            iframe.setAttribute('src', src);
+          }
+          var request = iframe.requestFullscreen || iframe.webkitRequestFullscreen ||
+                        iframe.mozRequestFullScreen || iframe.msRequestFullscreen;
+          if (request) request.call(iframe);
+          btn.style.display = 'none';
+        });
+      });
+
+      // Once the iframe has focus (from clicking play / using its controls),
+      // arrow-key presses go to the video's own document and never reach
+      // Reveal's keyboard handler — even after exiting fullscreen. Hand
+      // focus back to the top-level page whenever fullscreen ends or the
+      // slide changes, so left/right arrow navigation keeps working.
+      function releaseVideoFocus() {
+        if (document.activeElement && document.activeElement.tagName === 'IFRAME') {
+          document.activeElement.blur();
+        }
+      }
+      ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange']
+        .forEach(function (evt) {
+          document.addEventListener(evt, function () {
+            var fsEl = document.fullscreenElement || document.webkitFullscreenElement ||
+                       document.mozFullScreenElement || document.msFullscreenElement;
+            if (!fsEl) releaseVideoFocus();
+          });
+        });
+      Reveal.on('slidechanged', releaseVideoFocus);
+
+      // Safety net: the C-DaRE wordmark is pinned to the real viewport
+      // (position: fixed), so it doesn't scale down with the presentation.
+      // On short/narrow windows a vertically-centred slide can end up
+      // close to that corner. Never let a slide's content render above a
+      // safe minimum offset from the top of the slide.
+      var MIN_SLIDE_TOP = 70; // in Reveal's internal 960x700 units
+      function clampSlideTops() {
+        document.querySelectorAll('.reveal .slides section').forEach(function (sec) {
+          if (sec.classList.contains('stack')) return;
+          var top = parseFloat(sec.style.top);
+          if (!isNaN(top) && top < MIN_SLIDE_TOP) {
+            sec.style.top = MIN_SLIDE_TOP + 'px';
+          }
+        });
+      }
+      Reveal.on('slidechanged', function () { setTimeout(clampSlideTops, 30); });
+      window.addEventListener('resize', function () { setTimeout(clampSlideTops, 60); });
+      setTimeout(clampSlideTops, 50);
+
+    });
+  </script>
+</body>
+</html>
