@@ -32,7 +32,7 @@
     }
     #cov-wordmark img { height: 40px; display: block; }
 
-    .reveal h1 { color: var(--cov-white); font-size: 2.1em; }
+    .reveal h1 { color: var(--cov-white); font-size: 1.6em; }
     .reveal h2 { color: var(--cov-white); font-size: 1.4em; }
     .reveal h3 {
       color: var(--cov-blue);
@@ -56,6 +56,56 @@
       color: var(--cov-white);
       font-size: 0.5em; font-weight: 400;
       text-transform: none; letter-spacing: 0.01em;
+    }
+
+    /* short accent rule between title-slide lines */
+    .title-divider {
+      width: 80px; height: 2px;
+      margin: 1em auto;
+      border: none;
+      background: var(--cov-blue);
+    }
+
+    /* two-column layout: text on the left, a large figure on the right —
+       flex columns sit side by side so they can never overlap.
+       Heights are capped so the row fits under the title without
+       overflowing the slide (and the browser viewport). */
+    .split-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      margin-top: 0.6em;
+      text-align: left;
+    }
+    .split-text { flex: 0 0 340px; font-size: 0.8em; }
+    .split-text ul { margin: 0; }
+    .split-image {
+      flex: 1 1 auto;
+      text-align: center;
+      padding-right: 24px;
+    }
+
+    /* white-bordered card, image runs edge-to-edge inside it —
+       inline-block so the card shrink-wraps exactly to the image's
+       rendered size, with the rounded corner + shadow as the only
+       "boundary". Reveal's theme puts a default 20px margin on <img>
+       inside slides — that's what was leaving a gap; killed below. */
+    .graph-panel {
+      display: inline-block;
+      max-width: 100%;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+      line-height: 0;
+    }
+    .graph-panel img {
+      display: block;
+      margin: 0;
+      height: auto;
+      max-height: 360px;
+      width: auto;
+      max-width: 100%;
     }
 
     /* looser, less dense bullet lists */

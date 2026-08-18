@@ -13,7 +13,7 @@ Title slide. Update presenter name as needed. WP2 slot: 25-minute session (10 mi
 
 ## WP2 at a glance
 
-- Survey --> European dance heritage knowledge graph (shared with WP4)
+- Survey ➞ European dance heritage knowledge graph (shared with WP4)
 - D2.1 (M3) and D2.2 (M18) delivered
 - Analysis & application continue – not closed
 
@@ -31,14 +31,13 @@ Reviewers already have the recruitment numbers and headline findings from the pe
 <div class="split-layout">
   <div class="split-text">
     <ul>
-      <li class="fragment fade-up">Survey data --> baseline in the Wikibase graph</li>
+      <li class="fragment fade-up">Survey data ➞ Wikibase graph</li>
       <li class="fragment fade-up">Structured data ingested; open text is harder</li>
     </ul>
   </div>
   <div class="split-image">
     <div class="graph-panel">
       <img src="graph-example.png" alt="Knowledge graph sector example">
-      <p class="graph-caption">Knowledge graph sector example</p>
     </div>
   </div>
 </div>
@@ -67,15 +66,17 @@ This screening is currently done manually, applying the rules in the WP2 data-sh
 
 ---
 
-## Lessons learnt — the weight of decisions
+## Lessons: the weight of decisions
 
 - Judgment calls at every stage, not only survey design
 - Responsibility runs forward too
 
 Note:
-Sampling, redaction, coding, and now access rules have all required deliberate, documented choices — not just the original survey design. A real density of judgment calls runs through the whole pipeline, from instrument design through to who gets to see what, years from now.
+Sampling, redaction, coding, and now access rules have all required deliberate, documented choices — not just the original survey design. Density of decisions/judgements runs through the whole WP, from instrument design through to who gets to see what, years from now.
 
-Responsibility runs forward as well as back: to the people who gave their time and trust completing the survey, and to the wider field who will use this data. Keep this reflective and process-focused — the standing methodological caveats (representativeness, self-report bias, translation) are already documented in D2.2 and the periodic report; this slide is about the process of deciding, not a limitations list.
+Responsibility runs forward as well as back: to the people who gave their time and trust completing the survey, and to the wider field who will use this these. 
+
+{Keep this reflective and process-focused — the standing methodological caveats (representativeness, self-report bias, translation) are already documented in D2.2 and the periodic report; this slide is about the process of deciding, not a limitations list.}
 
 ---
 
@@ -97,7 +98,7 @@ The NVivo project itself — which retains un-redacted free text — will never 
 ## Pointers for RP2
 
 - Sign-off of the data-sharing & access guidelines
-- DMP amendment → v2 (holdings, licensing, barriers)
+- DMP amendment ➞ v2 (holdings, licensing, barriers)
 - Disclosure-risk assessment — precondition for marginalised text
 - Deposit via a trusted repository
 
