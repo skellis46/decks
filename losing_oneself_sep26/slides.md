@@ -4,7 +4,7 @@
 
 ---
 
-## Thresholds of the self
+## Threshold of the self
 ### Practice research and the question of data
 
 <div class="title-byline">Simon Ellis</div>
@@ -45,27 +45,27 @@ Note:
 ## Haseman (2006)
 ### Expand the category
 
-> Artistic forms can be data.
+Artistic forms can function as symbolic data.
 
 Note:
-
+> Performative research expressed in nonnumeric data, but in forms of symbolic data other than words in discursive text. These include material forms of practice, of still and moving images, of music and sound, of live action and digital code.
 
 ---
 
 ## Gisler (2018)
 ### Call it material
 
-> An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
+An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
 
 Note:
 
 
 ---
 
-## Nelson (2013)
+## Nelson (2006)
 ### Differentiate categories
 
-> Data, evidence, testimony, documentation and embodied knowing need not be collapsed together.
+Keep different evidential and knowledge categories distinct.
 
 Note:
 
@@ -75,20 +75,20 @@ Note:
 ## Arlander (2017)
 ### Make the categories relational and mobile
 
-> The same thing can function as data, material or output at different moments.
+Data, material and output are relational and mobile.
 
 Note:
-
+"the role of research data or material and the role of research output can be interchangeable, mixed or hybridized" (p.174)
 
 ---
 
 ## ELIA (2025)
 ### Question the institutional regime surrounding the category
 
-> Naming something data has methodological and political consequences.
+> There is no such thing as 'only data' [...] Data as a concept is already an ideology.
 
 Note:
-
+European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
 
 ---
 
@@ -158,4 +158,20 @@ Note:
 
 Note:
 - click through builds the left leg (Practice → Chapter) fully first, then the right leg (Practice → Shimmer videos)
+
+
+---
+
+## References
+
+<div class="refs">
+<p>Haseman, B. (2006). A Manifesto for Performative Research. <em>Media International Australia</em>, 118, 98–106.</p>
+<p>Gisler, Priska (2018), “Explaining,” in Celia Lury et al. (eds), Routledge Handbook of Interdisciplinary Research Methods, Abingdon: Routledge, p. 303.</p>
+<p>Nelson, R. (2006) <em>Practice-as-Research and the Problem of Knowledge</em>. Performance Research 11 (4), 105–116</p>
+<p>Arlander, A. (2017). Data, Material, Remains. In M. Koro-Ljungberg (Ed.), <em>Disrupting Data in Qualitative Inquiry: Entanglements with the Post-Critical and Post-Anthropocentric</em>. Peter Lang.</p>
+<p>ELIA (2025). Towards a Manifesto for Critical Openness in Artistic Research (Score, Version #1). ELIA Artistic Research Working Group. https://cdn.ymaws.com/elia-artschools.org/resource/resmgr/elia_library/Towards-a-Manifesto_for-Crit.pdf</p>
+</div>
+
+Note:
+- full references for the five positions on data (Haseman, Gisler, Nelson, Arlander) and the ELIA manifesto — note it's dated 2024, cited in-deck as ELIA (2025)
 
