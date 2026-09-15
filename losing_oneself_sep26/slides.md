@@ -20,17 +20,16 @@
 Note:
 - present the video; nothing to see, nothing to do, just notice
 
+--- 
 
----
+## Data
 
-<h2 class="pushed-down">Losing oneself (2024)</h2>
-
-- artistic research into unstable or disappearing selfhood during authentic movement
-- KC, MM, MG, SE | losingoneself.coventry.ac.uk
-- first-person experience, conversations and documentation
-- examined agency, attention and nondual awareness
+data is the plural of Latin datum – “something given”, from dare, “to give”.
 
 Note:
+
+In research, data are materials treated as given for analysis: observations, measurements, records, texts, images or other traces from which claims are developed.
+The term can therefore carry an assumption of givenness or separability: that something can be identified, recorded, extracted or held sufficiently stable to become an object of analysis.
 
 
 ---
@@ -55,7 +54,7 @@ Note:
 ## Gisler (2018)
 ### Call it material
 
-An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
+> An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
 
 Note:
 
@@ -89,6 +88,17 @@ Note:
 
 Note:
 European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
+
+---
+
+<h2 class="pushed-down">Losing oneself (2024)</h2>
+
+- artistic research into unstable or disappearing selfhood during authentic movement
+- KC, MM, MG, SE | losingoneself.coventry.ac.uk
+- first-person experience, conversations and documentation
+- examined agency, attention and nondual awareness
+
+Note:
 
 ---
 
@@ -173,5 +183,5 @@ Note:
 </div>
 
 Note:
-- full references for the five positions on data (Haseman, Gisler, Nelson, Arlander) and the ELIA manifesto — note it's dated 2024, cited in-deck as ELIA (2025)
+
 
