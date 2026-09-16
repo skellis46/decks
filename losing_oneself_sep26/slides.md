@@ -91,7 +91,7 @@ European League of Institutes of the Arts (ELIA) Artistic Research Working Group
 
 ---
 
-<h2 class="pushed-down">Losing oneself (2024)</h2>
+<h2>Losing oneself (2024)</h2>
 
 - artistic research into unstable or disappearing selfhood during authentic movement
 - KC, MM, MG, SE | losingoneself.coventry.ac.uk
@@ -181,7 +181,5 @@ Note:
 <p>Arlander, A. (2017). Data, Material, Remains. In M. Koro-Ljungberg (Ed.), <em>Disrupting Data in Qualitative Inquiry: Entanglements with the Post-Critical and Post-Anthropocentric</em>. Peter Lang.</p>
 <p>ELIA (2025). Towards a Manifesto for Critical Openness in Artistic Research (Score, Version #1). ELIA Artistic Research Working Group. https://cdn.ymaws.com/elia-artschools.org/resource/resmgr/elia_library/Towards-a-Manifesto_for-Crit.pdf</p>
 </div>
-
-Note:
 
 
