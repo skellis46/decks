@@ -59,6 +59,34 @@
     .refs p { margin: 0 0 0.7em; color: rgba(255,255,255,.85); }
     .refs em { font-style: italic; color: var(--cov-white); }
 
+    /* Divergent trajectories diagram: box/arrow layout is defined once
+       in JS below and rendered per-slide at whatever stage that slide's
+       .dft-frame[data-stage] names — replaces the old single-slide,
+       click-through fragment build. */
+    .dft-frame{position:relative;width:940px;height:470px;margin:0 auto;}
+    .dft-frame .dft-box{
+      position:absolute;box-sizing:border-box;
+      display:flex;align-items:center;justify-content:center;text-align:center;
+      border-radius:8px;padding:8px 16px;color:#fff;line-height:1.25;
+    }
+    .dft-frame .dft-box.root{
+      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);
+      font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:19px;
+    }
+    .dft-frame .dft-box.step{
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.22);
+      font-size:16px;
+    }
+    .dft-frame .dft-box.terminal{
+      background:linear-gradient(135deg,#0a5fb8,#5B289F);border:1px solid transparent;
+      font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:18px;
+    }
+    /* the stage just introduced on this slide gets a highlight ring */
+    .dft-frame .dft-box.current{
+      box-shadow:0 0 0 2px var(--cov-blue), 0 0 20px rgba(0,116,231,.5);
+    }
+    .dft-frame svg.dft-arrow{position:absolute;overflow:visible;}
+
     /* title-slide byline: presenter name, right-aligned below the subtitle */
     .title-byline {
       margin-top: 2.4em;
@@ -199,6 +227,71 @@
         });
       });
       Reveal.sync();
+
+      // ---- Divergent trajectories diagram: stage-aware renderer ----
+      // Single source of truth for box/arrow layout (was previously
+      // hand-duplicated fragment HTML inlined in slides.md for one slide;
+      // now driven by each .dft-frame's data-stage so the same definition
+      // renders across the many stage/detail slides in slides.md).
+      var DFT_ROOT_BOX = { left:380, top:13, width:180, height:43, cls:'root', text:'Practice' };
+      var DFT_ROOT_ARROW = { left:466, top:56, width:8, height:38, x1:4, y1:0, x2:4, y2:38 };
+      // Right leg first (per talk order, now 4 stages), then left leg (5 stages).
+      var DFT_STAGES = [
+        null, // 1-indexed to match data-stage
+        { arrow:{left:470, top:94,  width:235, height:34, x1:0, y1:0, x2:235, y2:34},
+          box:{left:570, top:128, width:270, height:43, cls:'step', text:'audiovisual recordings'} },
+        { arrow:{left:703, top:171, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:570, top:198, width:270, height:43, cls:'step', text:'post-production concept'} },
+        { arrow:{left:703, top:241, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:570, top:268, width:270, height:43, cls:'step', text:'editing'} },
+        { arrow:{left:703, top:311, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:570, top:338, width:270, height:43, cls:'terminal', text:'output (shimmer)'} },
+        { arrow:{left:235, top:94,  width:235, height:34, x1:235, y1:0, x2:0, y2:34},
+          box:{left:100, top:128, width:270, height:43, cls:'step', text:'experiential/discursive'} },
+        { arrow:{left:233, top:171, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:100, top:198, width:270, height:43, cls:'step', text:'conversations + interviews'} },
+        { arrow:{left:233, top:241, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:100, top:268, width:270, height:43, cls:'step', text:'transcription'} },
+        { arrow:{left:233, top:311, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:100, top:338, width:270, height:43, cls:'step', text:'thematic/search analysis'} },
+        { arrow:{left:233, top:381, width:4, height:27, x1:2, y1:0, x2:2, y2:27},
+          box:{left:100, top:408, width:270, height:43, cls:'terminal', text:'Chapter'} }
+      ];
+
+      function dftBoxHTML(box, extraCls) {
+        var cls = 'dft-box ' + box.cls + (extraCls ? ' ' + extraCls : '');
+        return '<div class="' + cls + '" style="left:' + box.left + 'px;top:' + box.top +
+               'px;width:' + box.width + 'px;height:' + box.height + 'px;">' + box.text + '</div>';
+      }
+      function dftArrowHTML(arrow) {
+        return '<svg class="dft-arrow" style="left:' + arrow.left + 'px;top:' + arrow.top + 'px;" ' +
+               'width="' + arrow.width + '" height="' + arrow.height + '">' +
+               '<line x1="' + arrow.x1 + '" y1="' + arrow.y1 + '" x2="' + arrow.x2 + '" y2="' + arrow.y2 + '" ' +
+               'stroke="rgba(255,255,255,.55)" stroke-width="2" marker-end="url(#dft-arrowhead)"/></svg>';
+      }
+      function renderDFT(frame) {
+        var stage = parseInt(frame.getAttribute('data-stage'), 10) || 0;
+        var html = dftArrowHTML(DFT_ROOT_ARROW) + dftBoxHTML(DFT_ROOT_BOX);
+        for (var i = 1; i <= stage; i++) {
+          var s = DFT_STAGES[i];
+          if (!s) continue;
+          html += dftArrowHTML(s.arrow) + dftBoxHTML(s.box, i === stage ? 'current' : '');
+        }
+        frame.innerHTML = html;
+      }
+
+      // one shared arrowhead marker (SVG marker refs resolve by id
+      // document-wide), reused by every .dft-frame instance
+      if (!document.getElementById('dft-arrowhead-defs')) {
+        var dftDefs = document.createElement('div');
+        dftDefs.id = 'dft-arrowhead-defs';
+        dftDefs.innerHTML =
+          '<svg width="0" height="0" style="position:absolute">' +
+          '<defs><marker id="dft-arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">' +
+          '<path d="M0,0 L10,5 L0,10 z" fill="rgba(255,255,255,.55)"></path></marker></defs></svg>';
+        document.body.appendChild(dftDefs);
+      }
+      document.querySelectorAll('.dft-frame').forEach(renderDFT);
 
       // Video embeds: one click starts playback (autoplay=1) AND requests
       // fullscreen on the iframe element itself, since this is a genuine
