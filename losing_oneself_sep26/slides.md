@@ -57,9 +57,14 @@ Note:
 ---
 
 ## Haseman (2006)
-### Expand the category
 
-Artistic forms can function as symbolic data.
+<div class="position-row">
+<div class="position-text">
+<h3>Expand the category</h3>
+<p class="fragment fade-up">Artistic forms can function as symbolic data.</p>
+</div>
+<div class="position-photo"><img src="haseman.jpg" alt="Brad Haseman"></div>
+</div>
 
 Note:
 > Performative research expressed in nonnumeric data, but in forms of symbolic data other than words in discursive text. These include material forms of practice, of still and moving images, of music and sound, of live action and digital code.
@@ -67,9 +72,14 @@ Note:
 ---
 
 ## Gisler (2018)
-### Call it material
 
-> An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
+<div class="position-row">
+<div class="position-text">
+<h3>Call it material</h3>
+<blockquote>An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.</blockquote>
+</div>
+<div class="position-photo"><img src="gisler.jpg" alt="Priska Gisler"></div>
+</div>
 
 Note:
 - smells as sweet. also requires translations in some contexts
@@ -77,9 +87,14 @@ Note:
 ---
 
 ## Nelson (2006)
-### Differentiate categories
 
-Keep different evidential and knowledge categories distinct.
+<div class="position-row">
+<div class="position-text">
+<h3>Differentiate categories</h3>
+<p class="fragment fade-up">Keep different evidential and knowledge categories distinct.</p>
+</div>
+<div class="position-photo"><img src="nelson.jpeg" alt="Robin Nelson"></div>
+</div>
 
 Note:
 
@@ -87,9 +102,14 @@ Note:
 ---
 
 ## Arlander (2017)
-### Make the categories relational and mobile
 
-Data, material and output are relational and mobile.
+<div class="position-row">
+<div class="position-text">
+<h3>Make the categories relational and mobile</h3>
+<p class="fragment fade-up">Data, material and output are relational and mobile.</p>
+</div>
+<div class="position-photo"><img src="arlander.jpg" alt="Annette Arlander"></div>
+</div>
 
 Note:
 "the role of research data or material and the role of research output can be interchangeable, mixed or hybridized" (p.174)
@@ -97,9 +117,14 @@ Note:
 ---
 
 ## ELIA (2025)
-### Question the institutional regime surrounding the category
 
-> There is no such thing as 'only data' [...] Data as a concept is already an ideology.
+<div class="position-row">
+<div class="position-text">
+<h3>Question the institutional regime surrounding the category</h3>
+<blockquote>There is no such thing as 'only data' [...] Data as a concept is already an ideology.</blockquote>
+</div>
+<div class="position-photo is-logo"><img src="elia.png" alt="ELIA — European League of Institutes of the Arts"></div>
+</div>
 
 Note:
 - European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
@@ -213,10 +238,20 @@ flowchart — right leg, terminal stage (4 of 4) (output (shimmer))
 ## output (shimmer)
 
 - an art object (?)
-- 
+- relationship to initial curiosity / theme? 
+- relationship to experience within the practice? 
+- documentation?
 
 Note:
-TODO — right leg, terminal stage (4 of 4)
+- fragile relationship if any to the 'theme' of my initial curiosity 
+- paper-thin relationship to the practice (and the experience of it from the inside)
+- is it emergent? 
+- what can I say about it as research? 
+- certainly doesn't feel like data -- what do data feel like? 
+- maybe it is leaning towards art (even if only a first draft/iteration
+- just because it came from a period of researchful activity (and practice) does not make it research??? 
+- could it be 2º data from the practice? 
+- is it documentation? no way. 
 
 ---
 

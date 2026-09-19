@@ -59,6 +59,47 @@
     .refs p { margin: 0 0 0.7em; color: rgba(255,255,255,.85); }
     .refs em { font-style: italic; color: var(--cov-white); }
 
+    /* five-positions slides: paraphrase/quote on the left, a portrait
+       (or logo, for ELIA — an organisation, not a person) on the right */
+    .position-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.2em;
+      max-width: 820px;
+      margin: 0.6em auto 0;
+      text-align: left;
+    }
+    .position-text { flex: 1 1 auto; min-width: 0; }
+    .position-text h3 { margin-top: 0; }
+    .position-text p { margin: 0; }
+    .position-text blockquote { width: 100%; margin: 0; text-align: left; }
+    .position-photo {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.05);
+    }
+    .position-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* ELIA's mark is a logo, not a cropped portrait — show it whole on
+       a light card rather than forcing it into the circular crop */
+    .position-photo.is-logo {
+      border-radius: 10px;
+      background: #fff;
+      padding: 14px;
+      box-sizing: border-box;
+    }
+    .position-photo.is-logo img { object-fit: contain; }
+    /* narrow window: stack photo below text rather than squeezing both */
+    @media (max-width: 700px) {
+      .position-row { flex-direction: column; text-align: center; }
+      .position-text { text-align: center; }
+      .position-text blockquote { text-align: center; }
+    }
+
     /* Divergent trajectories diagram: box/arrow layout is defined once
        in JS below and rendered per-slide at whatever stage that slide's
        .dft-frame[data-stage] names — replaces the old single-slide,
