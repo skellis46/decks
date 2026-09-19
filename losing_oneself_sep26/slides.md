@@ -12,15 +12,30 @@
 
 ---
 
+## shimmer
+
 <div class="video-embed">
   <iframe id="video-shimmer-again" title="Shimmer Again" src="https://exquisite.tube/videos/embed/cEYdrvjcbfB21Jxt9uaQj1" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
   <button class="video-fullscreen-btn" type="button" data-target="video-shimmer-again" aria-label="Play fullscreen"></button>
 </div>
 
 Note:
-- present the video; nothing to see, nothing to do, just notice
+present the video; nothing to see, nothing to do, just notice
 
---- 
+
+---
+
+## Reflection
+
+- things you noticed
+- relfecting on your experience 
+
+Note:
+solo -- 3-4 minutes
+pairs -- 
+annotate as i go? 
+
+---
 
 ## Data
 
@@ -57,7 +72,7 @@ Note:
 > An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.
 
 Note:
-
+- smells as sweet. also requires translations in some contexts
 
 ---
 
@@ -87,18 +102,29 @@ Note:
 > There is no such thing as 'only data' [...] Data as a concept is already an ideology.
 
 Note:
-European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
+- European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
+- ideological response to ideology (as if one can overwhelm ideology with more of a different colour)?
+- demello: As soon as you look at the world through an ideology you are finished. No reality fits an ideology. Life is beyond that.
 
 ---
 
-<h2>Losing oneself (2024)</h2>
+## Losing oneself (2024)
 
 - artistic research into unstable or disappearing selfhood during authentic movement
+- multi-methods (but primarily practice research)
 - KC, MM, MG, SE | losingoneself.coventry.ac.uk
 - first-person experience, conversations and documentation
 - examined agency, attention and nondual awareness
 
 Note:
+
+---
+
+## So far
+
+- shimmer (video)
+- positions on data
+- losing oneself (the project)
 
 ---
 
