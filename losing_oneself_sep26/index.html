@@ -83,16 +83,29 @@
       border: 2px solid rgba(255,255,255,.25);
       background: rgba(255,255,255,.05);
     }
-    .position-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    /* ELIA's mark is a logo, not a cropped portrait — show it whole on
-       a light card rather than forcing it into the circular crop */
+    /* !important here: reveal.css's own "html:not(.print-pdf) .reveal
+       section img" rule outranks a plain .position-photo img selector
+       on specificity and was forcing its 15px margin / #fff background /
+       1px #666 border onto these — the visible "edge" — and the theme's
+       max-width/max-height:95% cap was leaving a further gap uncovered */
+    .position-photo img {
+      width: 100% !important; height: 100% !important;
+      max-width: none !important; max-height: none !important;
+      object-fit: cover; display: block;
+      margin: 0 !important; border: 0 !important;
+      background: transparent !important; box-shadow: none !important;
+      box-sizing: border-box;
+    }
+    /* ELIA's mark is a logo, not a portrait — light card, cropped in
+       close (cover, not contain) so the mark reads at this size, with
+       a bit of extra zoom since cover alone still read a touch small */
     .position-photo.is-logo {
       border-radius: 10px;
       background: #fff;
-      padding: 14px;
+      padding: 4px;
       box-sizing: border-box;
     }
-    .position-photo.is-logo img { object-fit: contain; }
+    .position-photo.is-logo img { object-fit: cover; transform: scale(1.1); }
     /* narrow window: stack photo below text rather than squeezing both */
     @media (max-width: 700px) {
       .position-row { flex-direction: column; text-align: center; }

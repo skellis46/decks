@@ -61,7 +61,7 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Expand the category</h3>
-<p class="fragment fade-up">Artistic forms can function as symbolic data.</p>
+<p>Artistic forms can function as symbolic data.</p>
 </div>
 <div class="position-photo"><img src="haseman.jpg" alt="Brad Haseman"></div>
 </div>
@@ -76,7 +76,7 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Call it material</h3>
-<blockquote>An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc.</blockquote>
+<blockquote>"An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc."</blockquote>
 </div>
 <div class="position-photo"><img src="gisler.jpg" alt="Priska Gisler"></div>
 </div>
@@ -91,7 +91,7 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Differentiate categories</h3>
-<p class="fragment fade-up">Keep different evidential and knowledge categories distinct.</p>
+<p>Keep different evidential and knowledge categories distinct.</p>
 </div>
 <div class="position-photo"><img src="nelson.jpeg" alt="Robin Nelson"></div>
 </div>
@@ -106,7 +106,7 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Make the categories relational and mobile</h3>
-<p class="fragment fade-up">Data, material and output are relational and mobile.</p>
+<p>Data, material and output are relational and mobile.</p>
 </div>
 <div class="position-photo"><img src="arlander.jpg" alt="Annette Arlander"></div>
 </div>
@@ -121,7 +121,7 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Question the institutional regime surrounding the category</h3>
-<blockquote>There is no such thing as 'only data' [...] Data as a concept is already an ideology.</blockquote>
+<blockquote>"There is no such thing as 'only data' [...] Data as a concept is already an ideology."</blockquote>
 </div>
 <div class="position-photo is-logo"><img src="elia.png" alt="ELIA — European League of Institutes of the Arts"></div>
 </div>
