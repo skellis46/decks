@@ -106,13 +106,12 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Make the categories relational and mobile</h3>
-<p>Data, material and output are relational and mobile.</p>
+<blockquote>"the role of research data or material and the role of research output can be interchangeable, mixed or hybridized"</blockquote>
 </div>
 <div class="position-photo"><img src="arlander.jpg" alt="Annette Arlander"></div>
 </div>
 
 Note:
-"the role of research data or material and the role of research output can be interchangeable, mixed or hybridized" (p.174)
 
 ---
 
@@ -128,18 +127,16 @@ Note:
 
 Note:
 - European League of Institutes of the Arts (ELIA) Artistic Research Working Group: European network representing higher arts education institutions, including art, design, music, theatre, dance and related fields
-- ideological response to ideology (as if one can overwhelm ideology with more of a different colour)?
-- demello: As soon as you look at the world through an ideology you are finished. No reality fits an ideology. Life is beyond that.
 
 ---
 
 ## Losing oneself (2024)
 
 - artistic research into unstable or disappearing selfhood during authentic movement
+- examined agency, attention and nondual awareness
 - multi-methods (but primarily practice research)
 - KC, MM, MG, SE | losingoneself.coventry.ac.uk
 - first-person experience, conversations and documentation
-- examined agency, attention and nondual awareness
 
 Note:
 
@@ -148,7 +145,7 @@ Note:
 ## So far
 
 - shimmer (video)
-- positions on data
+- five positions on data
 - losing oneself (the project)
 
 ---
@@ -167,7 +164,7 @@ flowchart — starting point, Practice only
 <div class="dft-frame" data-stage="1"></div>
 
 Note:
-flowchart — right leg, stage 1 of 4 (audiovisual recordings)
+flowchart — right leg, stage 1 of 3 (audiovisual recordings)
 
 ---
 
@@ -190,19 +187,23 @@ Note:
 <div class="dft-frame" data-stage="2"></div>
 
 Note:
-flowchart — right leg, stage 2 of 4 (post-production concept)
+flowchart — right leg, stage 2 of 3 (post-production)
 
 ---
 
-## post-production concept
+## post-production
 
 - motion extraction
 - coincidence of timing
+- practice of making art
+- decision over-load
 
 Note:
 - coincidence of seeing @PosyMusic (youtuber) 'motion extraction' post-prod technique (<https://www.youtube.com/watch?app=desktop&v=NSS6yAMZF78>)
 - became interested in testing motion extraction (worked with Heinrich)
 - link between primary experiences of 'loss of sense of time' in the dancing, and the post-prod manipulation of time (to reveal motion detail)
+- very familiar experience (of editing) 
+- very hard to make decisions / working intuitively
 
 ---
 
@@ -211,27 +212,7 @@ Note:
 <div class="dft-frame" data-stage="3"></div>
 
 Note:
-flowchart — right leg, stage 3 of 4 (editing)
 
----
-
-## editing
-
-- practice of making art
-- decision over-load
-
-Note:
-- very familiar experience 
-- very hard to make decisions / working intuitively
-
----
-
-<h2 class="dft-title">Bifurcation</h2>
-
-<div class="dft-frame" data-stage="4"></div>
-
-Note:
-flowchart — right leg, terminal stage (4 of 4) (output (shimmer))
 
 ---
 
@@ -257,17 +238,43 @@ Note:
 
 <h2 class="dft-title">Bifurcation</h2>
 
-<div class="dft-frame" data-stage="5"></div>
+<div class="dft-frame" data-stage="4"></div>
 
 Note:
-flowchart — left leg, stage 1 of 5 (experiential/discursive)
+flowchart — left leg, stage 1 of 3 (conversations)
 
 ---
 
-## Experiential / discursive
+## Conversations / Discursive
+
+- reflective conversations
+- microphenomonological interviews 
+- reading / writing / editing
 
 Note:
-TODO — left leg, stage 1 of 5
+
+Data forms: conversations, interviews, literature, writing practice
+
+
+---
+
+<h2 class="dft-title">Bifurcation</h2>
+
+<div class="dft-frame" data-stage="5"></div>
+
+Note:
+flowchart — left leg, stage 2 of 3 (analysis)
+
+---
+
+## Analysis
+
+- thematic analysis of experience (inductive)
+- increasing clarity through writing
+- academic prose (more or less) focusing on specific moment in time
+
+Note:
+TODO — left leg, stage 2 of 3
 
 ---
 
@@ -276,62 +283,47 @@ TODO — left leg, stage 1 of 5
 <div class="dft-frame" data-stage="6"></div>
 
 Note:
-flowchart — left leg, stage 2 of 5 (conversations + interviews)
+flowchart — left leg, terminal stage (3 of 3) (output (book chapter))
 
 ---
 
-## Conversations + interviews
+## output (book chapter)
 
-Note:
-TODO — left leg, stage 2 of 5
-
----
-
-<h2 class="dft-title">Bifurcation</h2>
-
-<div class="dft-frame" data-stage="7"></div>
-
-Note:
-flowchart — left leg, stage 3 of 5 (transcription)
+Here are three brief extracts from the writing. 
 
 ---
 
-## Transcription
+### 1. The central question
+
+<blockquote>
+<p>This chapter details a tangible yet delicate part of dancing: the threshold between knowing one is dancing and ceasing to be aware that there is a one.</p>
+<p>If it sometimes feels as if it is not me (or anyone) doing this dancing then who or what is?</p>
+</blockquote>
 
 Note:
-TODO — left leg, stage 3 of 5
+
 
 ---
 
-<h2 class="dft-title">Bifurcation</h2>
+### 2. What being danced feels like
 
-<div class="dft-frame" data-stage="8"></div>
+<blockquote>
+<p>The improvised dancing continues to deepen but changes to being an experience without a conductor or organiser. […] The body does not vanish; the bounded, skin-contained, self-owned body vanishes.</p>
+<p>What appears instead is […] 'all body'.</p>
+</blockquote>
 
 Note:
-flowchart — left leg, stage 4 of 5 (thematic/search analysis)
+
 
 ---
 
-## Thematic / search analysis
+### 3. The epistemic problem
+
+<blockquote>
+<p>Crucially, and worryingly from a methodological perspective, there is no clear memory from within this experience when the organiser disappears, and I know it only through the return to deep sensory dancing.</p>
+</blockquote>
 
 Note:
-TODO — left leg, stage 4 of 5
-
----
-
-<h2 class="dft-title">Bifurcation</h2>
-
-<div class="dft-frame" data-stage="9"></div>
-
-Note:
-flowchart — left leg, terminal stage (5 of 5) (Chapter (terminal))
-
----
-
-## Chapter
-
-Note:
-TODO — left leg, terminal stage (5 of 5)
 
 
 ---
@@ -344,6 +336,7 @@ TODO — left leg, terminal stage (5 of 5)
 <p>Nelson, R. (2006) <em>Practice-as-Research and the Problem of Knowledge</em>. Performance Research 11 (4), 105–116</p>
 <p>Arlander, A. (2017). Data, Material, Remains. In M. Koro-Ljungberg (Ed.), <em>Disrupting Data in Qualitative Inquiry: Entanglements with the Post-Critical and Post-Anthropocentric</em>. Peter Lang.</p>
 <p>ELIA (2025). Towards a Manifesto for Critical Openness in Artistic Research (Score, Version #1). ELIA Artistic Research Working Group. https://cdn.ymaws.com/elia-artschools.org/resource/resmgr/elia_library/Towards-a-Manifesto_for-Crit.pdf</p>
+<p>Posy [@PosyMusic] (2023). Motion Extraction. <em>YouTube</em>. https://www.youtube.com/watch?v=NSS6yAMZF78</p>
 </div>
 
 
