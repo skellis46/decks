@@ -405,11 +405,13 @@ This may be where the etymology becomes useful rather than decorative: *datum*, 
 ## References
 
 <div class="refs">
-<p>Haseman, B. (2006). A Manifesto for Performative Research. <em>Media International Australia</em>, 118, 98–106.</p>
-<p>Gisler, Priska (2018), “Explaining,” in Celia Lury et al. (eds), Routledge Handbook of Interdisciplinary Research Methods, Abingdon: Routledge, p. 303.</p>
-<p>Nelson, R. (2006) <em>Practice-as-Research and the Problem of Knowledge</em>. Performance Research 11 (4), 105–116</p>
 <p>Arlander, A. (2017). Data, Material, Remains. In M. Koro-Ljungberg (Ed.), <em>Disrupting Data in Qualitative Inquiry: Entanglements with the Post-Critical and Post-Anthropocentric</em>. Peter Lang.</p>
 <p>ELIA (2025). Towards a Manifesto for Critical Openness in Artistic Research (Score, Version #1). ELIA Artistic Research Working Group. https://cdn.ymaws.com/elia-artschools.org/resource/resmgr/elia_library/Towards-a-Manifesto_for-Crit.pdf</p>
+<p>Ellis, S. (2026). <em>Shimmer</em> [screendance]. https://exquisite.tube/w/r8VvRToiP99gNMeFqNa6RE</p>
+<p>Ellis, S. (forthcoming). Threshold of the Self: Dancing and Non-dual Awareness. In <em>Routledge Companion to Dance and Somatic Practices</em>. Routledge.</p>
+<p>Gisler, Priska (2018), “Explaining,” in Celia Lury et al. (eds), Routledge Handbook of Interdisciplinary Research Methods, Abingdon: Routledge, p. 303.</p>
+<p>Haseman, B. (2006). A Manifesto for Performative Research. <em>Media International Australia</em>, 118, 98–106.</p>
+<p>Nelson, R. (2006) <em>Practice-as-Research and the Problem of Knowledge</em>. Performance Research 11 (4), 105–116</p>
 <p>Posy [@PosyMusic] (2023). Motion Extraction. <em>YouTube</em>. https://www.youtube.com/watch?v=NSS6yAMZF78</p>
 </div>
 
