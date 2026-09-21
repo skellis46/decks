@@ -353,7 +353,6 @@ Show of hands might work for the first question.
 
 Then acknowledge the tension: I suspect the chapter makes a stronger contribution to our understanding of the practice, while the moving-image work might more immediately look like artistic practice research.
 
-Avoid Borgdorff here. Crystallisation is relevant but may make the divergence seem more coherent than it actually is.
 
 
 ---
