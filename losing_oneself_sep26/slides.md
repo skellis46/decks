@@ -328,6 +328,81 @@ Note:
 
 ---
 
+## Distinct trajectories
+
+- One research practice
+- Multiple materials
+- Two radically different trajectories
+- Neither explains or validates the other
+
+Note:
+Show the two trajectories visually:
+
+> experiential/discursive materials → chapter  
+> audiovisual recordings → moving-image works
+
+The trajectories originate in the same research practice but become substantially different things. They are not simply different representations of the same findings.
+
+Ask:
+
+- Which one appears to be practice research?
+- Which contributes more to our understanding of the practice?
+- Would I comfortably present both as research outputs arising from the same project?
+
+Show of hands might work for the first question.
+
+Then acknowledge the tension: I suspect the chapter makes a stronger contribution to our understanding of the practice, while the moving-image work might more immediately look like artistic practice research.
+
+Avoid Borgdorff here. Crystallisation is relevant but may make the divergence seem more coherent than it actually is.
+
+
+---
+
+## Returning to the question of data
+
+> *datum* – something given
+
+- What counts as data?
+- Does the name matter?
+- When does it matter?
+
+Note:
+Briefly return to the five positions.
+
+I am probably closest to Arlander: the status of these things is relational and mobile. A recording might function as documentation, data, material or contribute to an artwork depending on what happens to it.
+
+But I am increasingly unsure how much energy should be spent deciding what something should be called.
+
+The category still matters. Calling something "data" can bring epistemic assumptions and institutional expectations about evidence, storage, access, ownership and reuse. This returns to ELIA.
+
+The question is therefore not simply important or unimportant. Its importance depends on context.
+
+
+---
+
+<!-- .slide: id="downstream-slide" -->
+
+## Downstream
+
+<div id="downstream-words"></div>
+
+<span class="fragment" data-fragment-index="0" id="downstream-trigger"></span>
+
+Note:
+BUT, it's downstream that things start to get interesting and start to matter. that is, it is what we do with these data that reveals the limits and possibilities of practice research (including not doing anything to them):
+
+It is what we do with these data/materials/gifts that reveals some of the limits and possibilities of practice research, including doing nothing with them.
+
+
+These activities can generate radically different trajectories from what was initially given. The question shifts from the ontology of data – "what is this thing?" – towards research practice: "what do we do, or not do, with what is given?"
+
+This may be where the etymology becomes useful rather than decorative: *datum*, something given. The interesting part is what happens downstream.
+
+---
+
+
+---
+
 ## References
 
 <div class="refs">

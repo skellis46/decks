@@ -199,6 +199,62 @@
       background: transparent;
       padding: 0;
     }
+
+    /* Downstream slide: words fly in from the right and out to the left.
+       A new word spawns every second (JS below); each word's own flight
+       takes longer (1.8s) than that spawn interval so the incoming word
+       is still crossing the outgoing one mid-flight — the "crossover".
+       Container is taller than the word's own line-box and centred via
+       flex, so descenders (g/y/p/…) aren't clipped by overflow:hidden. */
+    #downstream-words {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.6em;
+      margin: 1.4em auto 0;
+      max-width: 720px;
+      overflow: hidden;
+    }
+    #downstream-words .word-fly {
+      position: absolute;
+      left: 0; right: 0;
+      text-align: center;
+      line-height: 1.3;
+      font-size: 1.8em;
+      font-weight: 600;
+      color: var(--cov-white);
+      animation: downstream-word-fly 1.9s linear forwards;
+    }
+    /* final word in the list: flies in and stays put (no exit) —
+       autoplay ends here, resting at centre. */
+    #downstream-words .word-rest {
+      position: absolute;
+      left: 0; right: 0;
+      text-align: center;
+      line-height: 1.3;
+      font-size: 1.8em;
+      font-weight: 600;
+      color: var(--cov-white);
+      animation: downstream-word-rest 0.3s ease-out forwards;
+    }
+    @keyframes downstream-word-rest {
+      0%   { transform: translateX(140%); opacity: 0; }
+      100% { transform: translateX(0%);   opacity: 1; }
+    }
+    /* 1.9s total: ~0.3s fly in, exactly 1.3s fully still at centre
+       (15.8%-84.2% of 1.9s = 1.3s), ~0.3s fly out. New words still spawn
+       every 1s (JS below), so the next word's fly-in overlaps this word's
+       still hold/fly-out — that's the crossover. The per-keyframe
+       animation-timing-function below eases the entry (decelerates
+       smoothly into the hold) and the exit (accelerates away from it),
+       instead of the constant speed a single "linear" would give. */
+    @keyframes downstream-word-fly {
+      0%     { transform: translateX(140%);  opacity: 0; animation-timing-function: ease-out; }
+      15.8%  { transform: translateX(0%);    opacity: 1; animation-timing-function: linear; }
+      84.2%  { transform: translateX(0%);    opacity: 1; animation-timing-function: ease-in; }
+      100%   { transform: translateX(-140%); opacity: 0; }
+    }
   </style>
 </head>
 
@@ -409,6 +465,65 @@
           btn.style.display = 'none';
           if (src.indexOf('exquisite.tube') > -1) force1080p(iframe);
         });
+      });
+
+      // Downstream slide: auto-cycle through a word list, one word flying
+      // in from the right and out to the left every second, overlapping
+      // with the next so the two visibly cross paths mid-flight.
+      var DOWNSTREAM_WORDS = [
+        'analysing', 'imagining', 'playing', 'iterating', 'testing',
+        'refining', 'shaping', 'filtering', 'working', 're-working',
+        'forgetting', 'remembering', 'isolating', 'combining', 'doubting',
+        'hoping', 'desiring', 'believing', 'resting', 'moving', 'shuffling'
+      ];
+      // full list stays in place (including "moving"/"shuffling" after
+      // it) but playback stops on this word — it rests, the rest never plays
+      var DOWNSTREAM_STOP_WORD = 'resting';
+      var downstreamTimer = null;
+      var downstreamIndex = 0;
+      function spawnDownstreamWord() {
+        var container = document.getElementById('downstream-words');
+        if (!container) return false;
+        var word = DOWNSTREAM_WORDS[downstreamIndex % DOWNSTREAM_WORDS.length];
+        var isStop = word === DOWNSTREAM_STOP_WORD;
+        downstreamIndex++;
+        var el = document.createElement('div');
+        el.textContent = word;
+        if (isStop) {
+          // stop word: fly in and rest — autoplay ends here, no exit
+          el.className = 'word-rest';
+        } else {
+          el.className = 'word-fly';
+          el.addEventListener('animationend', function () { el.remove(); });
+        }
+        container.appendChild(el);
+        return isStop;
+      }
+      function startDownstreamCycle() {
+        if (downstreamTimer) return;
+        downstreamIndex = 0;
+        var stoppedAlready = spawnDownstreamWord();
+        if (!stoppedAlready) {
+          downstreamTimer = setInterval(function () {
+            var stopped = spawnDownstreamWord();
+            if (stopped) { clearInterval(downstreamTimer); downstreamTimer = null; }
+          }, 1000);
+        }
+      }
+      function stopDownstreamCycle() {
+        if (downstreamTimer) { clearInterval(downstreamTimer); downstreamTimer = null; }
+        var container = document.getElementById('downstream-words');
+        if (container) container.innerHTML = '';
+      }
+      Reveal.on('fragmentshown', function (event) {
+        if (event.fragment && event.fragment.id === 'downstream-trigger') startDownstreamCycle();
+      });
+      Reveal.on('fragmenthidden', function (event) {
+        if (event.fragment && event.fragment.id === 'downstream-trigger') stopDownstreamCycle();
+      });
+      Reveal.on('slidechanged', function (event) {
+        var onDownstream = event.currentSlide && event.currentSlide.id === 'downstream-slide';
+        if (!onDownstream) stopDownstreamCycle();
       });
 
       // Once the iframe has focus (from clicking play / using its controls),
