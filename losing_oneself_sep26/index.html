@@ -351,6 +351,42 @@
       // fullscreen on the iframe element itself, since this is a genuine
       // user-gesture click on our own page (not something inside the
       // cross-origin iframe, where autoplay+fullscreen would be blocked).
+      // PeerTube (exquisite.tube) embeds default to auto quality, which
+      // can start low and step up. Force 1080p (or the best available,
+      // if 1080p wasn't transcoded) via the PeerTube embed API rather
+      // than relying on manually picking it from the quality menu —
+      // requires the iframe's src to carry ?api=1 (see slides.md).
+      var PEERTUBE_API_SRC = 'https://unpkg.com/@peertube/embed-api/build/player.min.js';
+      var peertubeApiLoading = null;
+      function loadPeerTubeApi() {
+        if (window.PeerTubePlayer) return Promise.resolve();
+        if (peertubeApiLoading) return peertubeApiLoading;
+        peertubeApiLoading = new Promise(function (resolve, reject) {
+          var s = document.createElement('script');
+          s.src = PEERTUBE_API_SRC;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.head.appendChild(s);
+        });
+        return peertubeApiLoading;
+      }
+      function force1080p(iframe) {
+        loadPeerTubeApi().then(function () {
+          var player = new window.PeerTubePlayer(iframe);
+          return player.ready.then(function () { return player.getResolutions(); })
+            .then(function (resolutions) {
+              var target = resolutions.filter(function (r) { return String(r.height) === '1080'; })[0];
+              if (!target) {
+                // 1080p wasn't transcoded for this video — use whatever's highest
+                target = resolutions.reduce(function (best, r) {
+                  return (!best || Number(r.height) > Number(best.height)) ? r : best;
+                }, null);
+              }
+              if (target) return player.setResolution(target.id);
+            });
+        }).catch(function () { /* non-fatal — video still plays, just at default quality */ });
+      }
+
       document.querySelectorAll('.video-fullscreen-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
           var iframe = document.getElementById(btn.dataset.target);
@@ -364,6 +400,7 @@
                         iframe.mozRequestFullScreen || iframe.msRequestFullscreen;
           if (request) request.call(iframe);
           btn.style.display = 'none';
+          if (src.indexOf('exquisite.tube') > -1) force1080p(iframe);
         });
       });
 

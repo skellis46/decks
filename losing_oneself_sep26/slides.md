@@ -15,7 +15,7 @@
 ## shimmer
 
 <div class="video-embed">
-  <iframe id="video-shimmer-again" title="Shimmer" src="https://player.vimeo.com/video/1228371997?h=5546a124a0" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+  <iframe id="video-shimmer-again" title="Shimmer Again" src="https://exquisite.tube/videos/embed/r8VvRToiP99gNMeFqNa6RE?api=1" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
   <button class="video-fullscreen-btn" type="button" data-target="video-shimmer-again" aria-label="Play fullscreen"></button>
 </div>
 

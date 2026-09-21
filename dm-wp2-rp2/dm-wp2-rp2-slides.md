@@ -6,6 +6,11 @@
 
 ### Joe Askew, Marie-Louise Crawley, Rachael Davies, Simon Ellis, Lily Hayward-Smith, Kathryn Stamp & Charlotte Waelde
 
+<div class="title-logos">
+  <img src="dance-map-logo.png" alt="Dance Map">
+  <img src="eu-funded-logo.png" alt="Funded by the European Union">
+</div>
+
 Note:
 
 
@@ -18,9 +23,26 @@ Note:
 - Analysis & application continues
 
 Note:
+- *3 bullets*
 - WP2 objective: build survey (D2.1) and feed data into the European artistic dance heritage Knowledge Graph (D2.2) – a single artefact developed w WP4 Wikibase.
 - analysis, enrichment and application of findings continue as part of WP2/3/4/7 collaboration. 
 - Focus today: what's happened since D2.2, and what's still being worked through.
+
+---
+
+## Key findings from the survey
+
+- Sector's framing of "dance heritage" ≠ UNESCO's 2003 ICH categories
+- Key themes: embodied knowledge, creative reactivation of archives, heritage as evolving
+- Funding is the dominant need
+- Majority engage marginalised communities/practices
+
+Note:
+- *4 bullets*
+- Qualitative (Part B, WP2 progress narrative): free-text responses on what "dance heritage" means showed considerable disagreement over definition, even though the underlying activity described is coherent — pointing to a mismatch with the UNESCO 2003 Intangible Cultural Heritage Convention's categories. This is feeding a forthcoming article (European Journal of Transnational Practice, "Mobilising Heritage" special issue).
+- Recurring priorities from the qualitative coding: valuing knowledge held in the body; encouraging artists to reactivate archival material creatively; representing a wider range of histories and communities; treating dance heritage as something that shifts and evolves rather than staying fixed.
+- Quantitative (Frequency Counts, 2026-05-25, n=220): funding flagged as a future need by 85.9% of respondents and the single most urgent need for 50.5%; 
+- 59.5% said their work focuses on marginalised communities/practices (vs 14.1% no, 19.1% unsure).
 
 ---
 
@@ -41,6 +63,7 @@ Note:
 </div>
 
 Note:
+- *2 bullets, + diagram*
 - D2.2 supplied the survey-derived data into the shared Wikibase-hosted graph. 
 - structured, closed-question data has gone in well; the free-text/open-ended fields are the harder, still-developing part
 - current work: how best to take advantage of this rich data set (open questions)?
@@ -54,6 +77,7 @@ Note:
 - Third-party names redacted unless narrowly justified
 
 Note:
+- *3 bullets, go DOWN at end*
 The hardest ethical terrain in the survey data. Six of 88 individual respondents declined to be named – their free text is withheld and their attributes suppressed so they can't be identified by combination.
 
 ----
@@ -63,8 +87,8 @@ The hardest ethical terrain in the survey data. Six of 88 individual respondents
 <div class="test-grid">
   <div class="test-card fragment fade-up" data-fragment-index="0">
     <div class="test-num">1</div>
-    <div class="test-label">Professional capacity</div>
-    <div class="test-desc">Named in a professional dance/heritage capacity – not a private one</div>
+    <div class="test-label">Professional role</div>
+    <div class="test-desc">Named for their work, not their private life</div>
   </div>
   <div class="test-card fragment fade-up" data-fragment-index="1">
     <div class="test-num">2</div>
@@ -73,16 +97,17 @@ The hardest ethical terrain in the survey data. Six of 88 individual respondents
   </div>
   <div class="test-card fragment fade-up" data-fragment-index="2">
     <div class="test-num">3</div>
-    <div class="test-label">Incidental &amp; factual</div>
-    <div class="test-desc">The naming is incidental factual reference – not evaluative</div>
+    <div class="test-label">Just a fact</div>
+    <div class="test-desc">A factual mention, not a judgement</div>
   </div>
 </div>
 
 <p class="test-allnote fragment fade-up" data-fragment-index="3">All three must hold, or the name is redacted.</p>
 
-<div class="test-exception fragment fade-up" data-fragment-index="4">Special-category information about a third party is <strong>always</strong> redacted, regardless of public standing.</div>
+<div class="test-exception fragment fade-up" data-fragment-index="4">Sensitive personal details – sexuality, religion, politics – are always removed, no exceptions.</div>
 
 Note:
+- *3 squares + 2 parts under*
 - This screening is currently done manually, applying the rules in the WP2 data-sharing and access guidelines (v2, 2 September 2026) – it's part of implementing the access model set out in D2.2 (not unfinished WP2 deliverable work).
 
 ---
@@ -93,6 +118,7 @@ Note:
 - Responsibility to the future
 
 Note:
+- *2 bullets*
 - Sampling, redaction, coding, and now access rules have all required deliberate, documented choices – not just the original survey design. Density of decisions/judgements runs through the whole WP, from instrument design through to who gets to see what, years from now.
 - Responsibility runs forward as well as back: to the people who gave their time and trust completing the survey, and to the wider field who will use these data. 
 
@@ -115,6 +141,7 @@ Note:
 </div>
 
 Note:
+- *2 bullets + image*
 - open-text fields are analytically the richest material in the dataset and the hardest to make available responsibly
 - Under the access guidelines (v2, 2 Sept 2026), the controlled tier (case-level, signed agreement) holds: i) the redacted case-level dataset (XLSX) – which retains all fields, including the open-text responses, redacted at the content level rather than by removing columns; ii) the redacted coding framework; and iii) a derived coding matrix (case ID × theme label, containing no verbatim text).
 - some themes have only single case coded. these are reviewed and suppressed or merged where they could re-identify a respondent (e.g. in theme clusters 03 (marginalised comms and practices) / 05 (ip) / 06 (rightsholders)).
@@ -130,10 +157,14 @@ Note:
 - Deposit via a trusted repository
 
 Note:
+- *4 bullets*
 - WP2 deliverables complete; working on governance and access items with WP1 and coordinator
 - DMP amendment (draft, 3 August 2026) i) corrects survey-data holdings (a previously undocumented copy at UAnt, and partner view-access during collection); ii) corrects licensing (case-level survey data cannot carry an open licence – respondents retain copyright in free text; open release is limited to extracted facts, aggregates and metadata); and iii) clarifies sharing barriers cf original DMP
-- the access guidelines (v2) set two possible routes for releasing marginalised-practices special-category text: the disclosure-risk assessment confirms it's been effectively anonymised, or both joint controllers' DPOs confirm a lawful basis under GDPR Art. 9(2)(j)/Art. 89(1) – until either is confirmed, that text is withheld or generalised. The assessment route is underway now, done manually by the C-DaRE team as part of editing the coding framework; will be re-checked (again manually) once the tier 3 dataset is complete, expected by October
+- the access guidelines (v2) set two possible routes for releasing marginalised-practices special-category text: the disclosure-risk assessment confirms it's been effectively anonymised, or the project confirms a lawful basis for processing it under GDPR – until either is confirmed, that text is withheld or generalised. The assessment route is completed now, done manually by the C-DaRE team as part of editing the coding framework; will be re-checked (again manually) once the tier 3 dataset is complete, expected by October
 - Deposit via a trusted repository with a persistent identifier, once the above are settled.
+
+---
+
 
 ---
 
@@ -145,6 +176,6 @@ Note:
 </div>
 
 Note:
-a) The tension underneath this whole deck – protecting third parties and marginalised respondents versus keeping the data genuinely usable – is sharpest here. Two angles worth raising. First, the controlled-tier route itself: the redacted case-level dataset now confirmed to carry the actual open-text responses (redacted in place, not stripped out), so is that route – signed agreement, approved applicants only – striking the right balance, or still too restrictive/too loose. Second, the separate public-facing question: right now only aggregate outputs (Tier 2) are openly available and free text stays case-level only – is there ever a path for more of it to surface publicly via the Wikibase graph or website, short of full open text, or does it stay controlled-access indefinitely.
+a) The tension underneath this whole deck – protecting third parties and marginalised respondents versus keeping the data genuinely usable – is sharpest here. Two things worth raising. First, the controlled-tier route itself: the redacted case-level dataset now confirmed to carry the actual open-text responses (redacted), so is that route – signed agreement, approved applicants only – striking the right balance, or still too restrictive/too loose. Second, the separate public-facing question: right now only aggregate outputs (Tier 2) are openly available and free text stays case-level only – is there ever a path for more of it to surface publicly via the Wikibase graph or website, short of full open text, or does it stay controlled-access indefinitely.
 b) Stress-testing the access-approval governance workflow (currently: coordinator as approver, C-DaRE as technical consultee) before real requests start arriving.
 

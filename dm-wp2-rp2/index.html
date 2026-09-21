@@ -66,6 +66,21 @@
       background: var(--cov-blue);
     }
 
+    /* title-slide logo row: project + funder logos, alongside the
+       C-DaRE/Coventry wordmark already pinned top-right */
+    .title-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+      margin-top: 2.6em;
+    }
+    .title-logos img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
     /* two-column layout: text on the left, a large figure on the right —
        flex columns sit side by side so they can never overlap.
        Heights are capped so the row fits under the title without
@@ -170,7 +185,7 @@
 
     /* discussion-prompt lines — plain letter-labelled lines, all visible
        on arrival (no click-to-reveal), each on its own row */
-    .discuss-list { text-align: left; }
+    .discuss-list { text-align: left; max-width: 900px; }
     .discuss-list p { margin: 0.55em 0; }
 
     /* video embeds: click-to-play-fullscreen overlay */
