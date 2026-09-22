@@ -31,15 +31,13 @@ Note:
 - relfecting on your experience 
 
 Note:
-solo -- 3-4 minutes
-pairs -- 
-annotate as i go? 
+solo -- 2-minutes; then pairs 
 
 ---
 
 ## Data
 
-data is the plural of Latin datum – “something given”, from dare, “to give”.
+data is the plural of Latin datum – “something given”, from dare, “to give”
 
 Note:
 
@@ -76,13 +74,14 @@ Note:
 <div class="position-row">
 <div class="position-text">
 <h3>Call it material</h3>
-<blockquote>"An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc."</blockquote>
+<blockquote>"An artist might generate material (not data, as the sociologist would tend to say) by observation, interviews, dreams, memories, etc"</blockquote>
 </div>
 <div class="position-photo"><img src="gisler.jpg" alt="Priska Gisler"></div>
 </div>
 
 Note:
-- smells as sweet. also requires translations in some contexts
+- Priska Gisler; 
+- also requires translations in some contexts
 
 ---
 
@@ -98,6 +97,8 @@ Note:
 
 Note:
 
+Different forms of knowledge and evidence (testimony, documentation, embodied knowing, etc) need not be collapsed into a single category of data.
+
 
 ---
 
@@ -112,6 +113,10 @@ Note:
 </div>
 
 Note:
+
+- Annette
+- Data, material and output are relational roles that can shift, overlap or become hybridised.
+- Nelson: don’t assume different epistemic categories are equivalent. Arlander: don’t assume the roles occupied by research materials are fixed.
 
 ---
 
@@ -133,12 +138,13 @@ Note:
 ## Losing oneself (2024)
 
 - artistic research into unstable or disappearing selfhood during authentic movement
+- KC, MM, MG, SE | losingoneself.coventry.ac.uk
 - examined agency, attention and nondual awareness
 - multi-methods (but primarily practice research)
-- KC, MM, MG, SE | losingoneself.coventry.ac.uk
 - first-person experience, conversations and documentation
 
 Note:
+Merritt Millman, Michaela Gerussi, Katye Code
 
 ---
 
@@ -154,8 +160,7 @@ Note:
 
 <div class="dft-frame" data-stage="0"></div>
 
-Note:
-flowchart — starting point, Practice only
+Note: 
 
 ---
 
@@ -193,16 +198,16 @@ flowchart — right leg, stage 2 of 3 (post-production)
 
 ## post-production
 
-- motion extraction
 - coincidence of timing
+- motion extraction
 - practice of making art
 - decision over-load
 
 Note:
 - coincidence of seeing @PosyMusic (youtuber) 'motion extraction' post-prod technique (<https://www.youtube.com/watch?app=desktop&v=NSS6yAMZF78>)
-- became interested in testing motion extraction (worked with Heinrich)
+- became interested in testing motion extraction (worked with Heinrich Escano)
 - link between primary experiences of 'loss of sense of time' in the dancing, and the post-prod manipulation of time (to reveal motion detail)
-- very familiar experience (of editing) 
+- very familiar experience (of editing/making) 
 - very hard to make decisions / working intuitively
 
 ---
@@ -218,21 +223,20 @@ Note:
 
 ## output (shimmer)
 
-- an art object (?)
 - relationship to initial curiosity / theme? 
 - relationship to experience within the practice? 
+- emergence / art object 
 - documentation?
 
 Note:
 - fragile relationship if any to the 'theme' of my initial curiosity 
 - paper-thin relationship to the practice (and the experience of it from the inside)
-- is it emergent? 
-- what can I say about it as research? 
+- is it emergent? Something emergent comes out of the making, not the plan — not what I set out to do, but what the process produced. And it doesn't reduce back down. I can't trace the shimmer video cleanly to a decision, or to my original curiosity, or even to the practice itself — it just came out of doing. (perhaps we overuse and oversimplify 'emergence' when we mean unexpected or 'developed during the process')
 - certainly doesn't feel like data -- what do data feel like? 
 - maybe it is leaning towards art (even if only a first draft/iteration
-- just because it came from a period of researchful activity (and practice) does not make it research??? 
-- could it be 2º data from the practice? 
-- is it documentation? no way. 
+- what can I say about the video/film as research? 
+- but, just because it came from a period of researchful activity (and practice) does not necessarily make it research (?)
+- is the video documentation? no way. 
 
 ---
 
@@ -248,12 +252,12 @@ flowchart — left leg, stage 1 of 3 (conversations)
 ## Conversations / Discursive
 
 - reflective conversations
-- microphenomonological interviews 
+- microphenomonological interviews (kind of)
 - reading / writing / editing
 
 Note:
 
-Data forms: conversations, interviews, literature, writing practice
+Data forms: (post practice) conversations, interviews, literature, writing practice
 
 
 ---
@@ -274,7 +278,8 @@ flowchart — left leg, stage 2 of 3 (analysis)
 - academic prose (more or less) focusing on specific moment in time
 
 Note:
-TODO — left leg, stage 2 of 3
+- inductive = codes and themes are generated through engagement with the material (c.f. Deductive thematic analysis: start with theoretical framing and look)
+- clarity especially revealed as bumped into epistemic limits 
 
 ---
 
@@ -325,6 +330,7 @@ Note:
 
 Note:
 
+Deep sensory dancing is a state of full, effortless sensory immersion in which attention is widened and simultaneous, while a sense of self remains present as the organiser of experience.
 
 ---
 
@@ -364,7 +370,7 @@ I suspect the chapter makes a stronger contribution to understanding the practic
 Note:
 Of the five positions, I feel closest to Arlander: the status of these things is relational and mobile. A recording might function as documentation, data, material or contribute to an artwork depending on what happens to it.
 
-But I am increasingly unsure how much energy should be spent deciding what something should be called, even if calling something "data" can bring epistemic assumptions and institutional expectations about evidence, storage, access, ownership and reuse. 
+But I am increasingly unsure how much energy should be spent deciding what something should be called (it's one of the academy's enduring pastimes, esp in A&H), even if calling something "data" can bring epistemic assumptions and institutional expectations about evidence, storage, access, ownership and reuse. 
 
 
 ---
@@ -395,7 +401,7 @@ These activities can generate radically different trajectories from what was ini
 <p>ELIA (2025). Towards a Manifesto for Critical Openness in Artistic Research (Score, Version #1). ELIA Artistic Research Working Group. https://cdn.ymaws.com/elia-artschools.org/resource/resmgr/elia_library/Towards-a-Manifesto_for-Crit.pdf</p>
 <p>Ellis, S. (2026). <em>Shimmer</em> [screendance]. https://exquisite.tube/w/r8VvRToiP99gNMeFqNa6RE</p>
 <p>Ellis, S. (forthcoming). Threshold of the Self: Dancing and Non-dual Awareness. In <em>Routledge Companion to Dance and Somatic Practices</em>. Routledge.</p>
-<p>Gisler, Priska (2018), “Explaining,” in Celia Lury et al. (eds), Routledge Handbook of Interdisciplinary Research Methods, Abingdon: Routledge, p. 303.</p>
+<p>Gisler, P. (2018), “Explaining,” in Celia Lury et al. (eds), Routledge Handbook of Interdisciplinary Research Methods, Abingdon: Routledge, p. 303.</p>
 <p>Haseman, B. (2006). A Manifesto for Performative Research. <em>Media International Australia</em>, 118, 98–106.</p>
 <p>Nelson, R. (2006) <em>Practice-as-Research and the Problem of Knowledge</em>. Performance Research 11 (4), 105–116</p>
 <p>Posy [@PosyMusic] (2023). Motion Extraction. <em>YouTube</em>. https://www.youtube.com/watch?v=NSS6yAMZF78</p>
