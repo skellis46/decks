@@ -116,6 +116,54 @@
       .position-text blockquote { text-align: center; }
     }
 
+    /* Distinct trajectories: two source->output rows, reusing the same
+       step/terminal box language as the Bifurcation flowchart. */
+    .trajectory-diagram {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin: 2em auto 0;
+      max-width: 780px;
+    }
+    .trajectory-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+    .trajectory-box {
+      flex: 0 1 300px;
+      box-sizing: border-box;
+      padding: 14px 18px;
+      border-radius: 8px;
+      text-align: center;
+      color: #fff;
+      line-height: 1.25;
+      font-size: 0.85em;
+    }
+    .trajectory-box.source {
+      flex-basis: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+    .trajectory-box.output {
+      background: linear-gradient(135deg, #0a5fb8, #5B289F);
+      border: 1px solid transparent;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.8em;
+    }
+    .trajectory-arrow {
+      flex: 0 0 auto;
+      font-size: 1.6em;
+      color: var(--cov-blue);
+    }
+    @media (max-width: 700px) {
+      .trajectory-row { flex-direction: column; }
+      .trajectory-arrow { transform: rotate(90deg); }
+    }
+
     /* Divergent trajectories diagram: box/arrow layout is defined once
        in JS below and rendered per-slide at whatever stage that slide's
        .dft-frame[data-stage] names — replaces the old single-slide,
