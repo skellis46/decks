@@ -39,10 +39,10 @@ Note:
 
 Note:
 - *4 bullets*
-- Qualitative (Part B, WP2 progress narrative): free-text responses on what "dance heritage" means showed considerable disagreement over definition, even though the underlying activity described is coherent — pointing to a mismatch with the UNESCO 2003 Intangible Cultural Heritage Convention's categories. This is feeding a forthcoming article (European Journal of Transnational Practice, "Mobilising Heritage" special issue).
+- Qualitative: free-text responses on what "dance heritage" means showed considerable disagreement over definition, even though the underlying activity described is coherent — pointing to a mismatch with the UNESCO 2003 Intangible Cultural Heritage Convention's categories. This is feeding a forthcoming article by the team.
 - Recurring priorities from the qualitative coding: valuing knowledge held in the body; encouraging artists to reactivate archival material creatively; representing a wider range of histories and communities; treating dance heritage as something that shifts and evolves rather than staying fixed.
-- Quantitative (Frequency Counts, 2026-05-25, n=220): funding flagged as a future need by 85.9% of respondents and the single most urgent need for 50.5%; 
-- 59.5% said their work focuses on marginalised communities/practices (vs 14.1% no, 19.1% unsure).
+- Quantitative: funding flagged as a future need by 85.9% of respondents and the single most urgent need for 50.5%; 
+- 60% said their work focuses on marginalised communities/practices.
 
 ---
 
@@ -78,7 +78,7 @@ Note:
 
 Note:
 - *3 bullets, go DOWN at end*
-The hardest ethical terrain in the survey data. Six of 88 individual respondents declined to be named – their free text is withheld and their attributes suppressed so they can't be identified by combination.
+third party and marginalised components are the hardest ethical terrain in the survey data. Six of 88 individual respondents declined to be named – their free text is withheld and their attributes suppressed so they can't be identified by combination.
 
 ----
 
@@ -108,7 +108,7 @@ The hardest ethical terrain in the survey data. Six of 88 individual respondents
 
 Note:
 - *3 squares + 2 parts under*
-- This screening is currently done manually, applying the rules in the WP2 data-sharing and access guidelines (v2, 2 September 2026) – it's part of implementing the access model set out in D2.2 (not unfinished WP2 deliverable work).
+- This screening is done manually, applying the rules in the WP2 data-sharing and access guidelines (v2, 2 September 2026) – it's part of implementing the access model set out in D2.2.
 
 ---
 
@@ -143,8 +143,7 @@ Note:
 Note:
 - *2 bullets + image*
 - open-text fields are analytically the richest material in the dataset and the hardest to make available responsibly
-- Under the access guidelines (v2, 2 Sept 2026), the controlled tier (case-level, signed agreement) holds: i) the redacted case-level dataset (XLSX) – which retains all fields, including the open-text responses, redacted at the content level rather than by removing columns; ii) the redacted coding framework; and iii) a derived coding matrix (case ID × theme label, containing no verbatim text).
-- some themes have only single case coded. these are reviewed and suppressed or merged where they could re-identify a respondent (e.g. in theme clusters 03 (marginalised comms and practices) / 05 (ip) / 06 (rightsholders)).
+- Under the access guidelines (v2, 2 Sept 2026), the controlled tier holds -- controlled tier just means case or respondent level access, under signed agreement — as opposed to the open aggregate outputs -- the controlled tier holds: i) the redacted case level dataset (XL file) – which retains all fields, including the open-text responses, redacted at the content level; ii) the redacted coding framework; and iii) a derived coding matrix (case ID × theme label, containing no verbatim text).
 - The NVivo project itself – which retains un-redacted free text – will never be released, at any tier. 
 
 ---
@@ -159,12 +158,17 @@ Note:
 Note:
 - *4 bullets*
 - WP2 deliverables complete; working on governance and access items with WP1 and coordinator
-- DMP amendment (draft, 3 August 2026) i) corrects survey-data holdings (a previously undocumented copy at UAnt, and partner view-access during collection); ii) corrects licensing (case-level survey data cannot carry an open licence – respondents retain copyright in free text; open release is limited to extracted facts, aggregates and metadata); and iii) clarifies sharing barriers cf original DMP
-- the access guidelines (v2) set two possible routes for releasing marginalised-practices special-category text: the disclosure-risk assessment confirms it's been effectively anonymised, or the project confirms a lawful basis for processing it under GDPR – until either is confirmed, that text is withheld or generalised. The assessment route is completed now, done manually by the C-DaRE team as part of editing the coding framework; will be re-checked (again manually) once the tier 3 dataset is complete, expected by October
+- DMP amendment (draft, 3 August 2026) i) corrects survey-data holdings; ii) corrects licensing (case-level survey data cannot carry an open licence – respondents retain copyright in free text; open release is limited to extracted facts, aggregates and metadata); and iii) clarifies sharing barriers cf original DMP
+- the access guidelines (v2) set two possible routes for releasing marginalised-practices special-category text: the disclosure-risk assessment confirms it's been effectively anonymised, or the project confirms a lawful basis for processing it under GDPR – until either is confirmed, that text is withheld or generalised. The assessment route is in process, being done manually by the C-DaRE team as part of editing the coding framework; will be re-checked (again manually) once the tier 3 dataset is complete, expected by October
 - Deposit via a trusted repository with a persistent identifier, once the above are settled.
 
 ---
 
+Note:
+
+- underneath this all is the beautiful tension between the open-ness of the survey (and richness of this data) and how best to make those data accessible and useful to the public
+- challenging and rewarding
+- thanks again to the team here at C-DaRE and to the entire consortium for support, questions and collegiality
 
 ---
 
