@@ -12,23 +12,14 @@
 
 ---
 
-## shimmer
-
-<div class="video-embed">
-  <iframe id="video-shimmer-again" title="Shimmer Again" src="https://exquisite.tube/videos/embed/r8VvRToiP99gNMeFqNa6RE?api=1" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-  <button class="video-fullscreen-btn" type="button" data-target="video-shimmer-again" aria-label="Play fullscreen"></button>
-</div>
-
-Note:
-
-
+## 
 
 ---
 
 ## Reflection
 
 - things you noticed
-- relfecting on your experience 
+- things you experienced 
 
 Note:
 solo -- 2-minutes; then pairs 
@@ -370,7 +361,7 @@ I suspect the chapter makes a stronger contribution to understanding the practic
 Note:
 Of the five positions, I feel closest to Arlander: the status of these things is relational and mobile. A recording might function as documentation, data, material or contribute to an artwork depending on what happens to it.
 
-But I am increasingly unsure how much energy should be spent deciding what something should be called (it's one of the academy's enduring pastimes, esp in A&H), even if calling something "data" can bring epistemic assumptions and institutional expectations about evidence, storage, access, ownership and reuse. 
+But I am increasingly unsure how much energy should be spent deciding what something should be called (it's one of the academy's enduring pastimes, esp in A&H), even if calling something "data" can reveal epistemic assumptions and institutional expectations about evidence, storage, access, ownership and reuse. 
 
 
 ---
@@ -386,7 +377,9 @@ But I am increasingly unsure how much energy should be spent deciding what somet
 Note:
 BUT, it's downstream of both nomenclature and the 'data things' themselves that it gets interesting and starts to matter. That is, it is what we do with these data that reveals the limits and possibilities of practice research (including not doing anything to them):
 
-These activities can generate radically different trajectories from what was initially given. The question shifts from the ontology of data – "what is this thing?" – towards research practice: "what do we do, or not do, with what is given?"
+These activities can generate radically different trajectories from what was initially given. The question shifts from the ontology of data – "what is this thing?" (and what should we call it?) – towards research practice: "what do we do, or not do, with what is given?"
+
+This question of action -- the broad and imaginative range of things we do with the _given materials_ is the work of not only practice research, but all research. What practice research celebrates (and affords) in a peculiar way, is the surprising ways in which data might be presented, represented, analysed and shared. Objects of art might be one of those things, but they may not be the most important to the field. 
 
 
 ---
